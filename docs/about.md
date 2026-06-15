@@ -1,6 +1,6 @@
 # About
 
-This site is a community-maintained reference for Raspberry Pi board-level repair. The goal is to collect and organize hardware repair data that is currently scattered across forums, videos, and personal notes into a single searchable resource.
+This site is a reference for Raspberry Pi board-level repair. The goal is to collect and organize hardware repair data that is currently scattered across forums, videos, and personal notes into a single searchable resource.
 
 ## Who
 
