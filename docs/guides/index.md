@@ -1,10 +1,10 @@
 # Guides
 
-Step-by-step guides for various Raspberry Pi projects and configurations.
+General-purpose repair technique guides. This section is planned for future content.
 
-## Categories
+Planned topics:
 
-Guides will be organized by topic as content is added. Check back for new entries!
-
-!!! note
-    This section is under construction. More guides coming soon.
+- Multimeter basics for board diagnosis
+- Hot air rework station techniques
+- Reading schematics for repair
+- Common SMD component identification

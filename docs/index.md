@@ -1,12 +1,27 @@
-# Raspberry Pi Info
+---
+hide:
+  - navigation
+---
 
-Welcome to my collection of Raspberry Pi information, guides, and notes.
+# RPi Repair Reference
 
-## About This Site
+A board-level repair reference for Raspberry Pi hardware. Component inventories, voltage maps, test points, and documented failure modes.
 
-This site serves as a personal knowledge base for Raspberry Pi projects, configurations, and tips I've gathered over time. Whether you're setting up a new Pi or troubleshooting an existing one, I hope you find something useful here.
+## What's Here
 
-## What You'll Find
+This site organizes repair-relevant data by Pi model and variant:
 
-- **Getting Started** — Initial setup, OS installation, and first-boot configuration.
-- **Guides** — Step-by-step walkthroughs for various projects and configurations.
+- **Components** - Key ICs, regulators, and passives with designators and part numbers
+- **Voltages** - Expected voltage rails and measurements at key points
+- **Test Points** - Board test point locations and their expected readings
+- **Failure Modes** - Documented failure patterns, symptoms, and repair approaches
+
+## Models Covered
+
+| Family | Variants |
+|--------|----------|
+| Pi 3   | 3B, 3B+, 3A+ |
+| Pi 4   | Model B |
+| Pi 5   | Model B |
+
+Pick a model from the navigation tabs above to get started.
