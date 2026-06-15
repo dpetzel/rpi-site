@@ -50,43 +50,41 @@ extra:
 
 nav:
   - Pi 3:
-    - pi3/index.md
+    - Overview: pi3/index.md
     - 3B:
-      - pi3/3b/index.md
+      - Overview: pi3/3b/index.md
       - Components: pi3/3b/components.md
       - Voltages: pi3/3b/voltages.md
       - Test Points: pi3/3b/test-points.md
       - Failure Modes: pi3/3b/failure-modes.md
     - 3B+:
-      - pi3/3b-plus/index.md
+      - Overview: pi3/3b-plus/index.md
       - Components: pi3/3b-plus/components.md
       - Voltages: pi3/3b-plus/voltages.md
       - Test Points: pi3/3b-plus/test-points.md
       - Failure Modes: pi3/3b-plus/failure-modes.md
     - 3A+:
-      - pi3/3a-plus/index.md
+      - Overview: pi3/3a-plus/index.md
       - Components: pi3/3a-plus/components.md
       - Voltages: pi3/3a-plus/voltages.md
       - Test Points: pi3/3a-plus/test-points.md
       - Failure Modes: pi3/3a-plus/failure-modes.md
   - Pi 4:
-    - pi4/index.md
+    - Overview: pi4/index.md
     - Model B:
-      - pi4/model-b/index.md
+      - Overview: pi4/model-b/index.md
       - Components: pi4/model-b/components.md
       - Voltages: pi4/model-b/voltages.md
       - Test Points: pi4/model-b/test-points.md
       - Failure Modes: pi4/model-b/failure-modes.md
   - Pi 5:
-    - pi5/index.md
+    - Overview: pi5/index.md
     - Model B:
-      - pi5/model-b/index.md
+      - Overview: pi5/model-b/index.md
       - Components: pi5/model-b/components.md
       - Voltages: pi5/model-b/voltages.md
       - Test Points: pi5/model-b/test-points.md
       - Failure Modes: pi5/model-b/failure-modes.md
-  - Guides:
-    - guides/index.md
   - About: about.md
   - Disclaimer: disclaimer.md
   - Disclosure: disclosure.md
