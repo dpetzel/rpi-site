@@ -16,13 +16,13 @@ theme:
     - search.highlight
   palette:
     - scheme: default
-      primary: green
+      primary: blue
       accent: light green
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: green
+      primary: blue
       accent: light green
       toggle:
         icon: material/brightness-4
