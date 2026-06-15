@@ -3,6 +3,10 @@ site_url: https://rpi.dpetzel.info
 site_description: Raspberry Pi board-level repair reference - component inventories, voltage maps, test points, and failure modes.
 site_author: dpetzel
 
+repo_url: https://github.com/dpetzel/rpi-site
+repo_name: dpetzel/rpi-site
+edit_uri: edit/main/docs/
+
 theme:
   name: material
   custom_dir: overrides
