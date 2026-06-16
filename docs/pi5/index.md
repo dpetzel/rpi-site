@@ -6,13 +6,16 @@ The Pi 5 does not use a "Model A" / "Model B" designation — there is a single 
 
 ## Board Photos
 
-### Top
-
-![Pi 5 board top](images/pi5_board_top.png)
-
-### Bottom
-
-![Pi 5 board bottom](images/pi5_board_bottom.png)
+<div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+  <figure style="flex: 1; min-width: 200px; margin: 0;">
+    <img src="images/pi5_board_top.png" alt="Pi 5 board top" style="width: 100%;">
+    <figcaption style="text-align: center; font-size: 0.8rem;">Top</figcaption>
+  </figure>
+  <figure style="flex: 1; min-width: 200px; margin: 0;">
+    <img src="images/pi5_board_bottom.png" alt="Pi 5 board bottom" style="width: 100%;">
+    <figcaption style="text-align: center; font-size: 0.8rem;">Bottom</figcaption>
+  </figure>
+</div>
 
 ## Revisions
 
