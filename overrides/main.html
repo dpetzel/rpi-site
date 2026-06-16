@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 
-{% block content %}
+{% block footer %}
   {{ super() }}
-  <hr style="margin-top: 2rem;">
-  <p style="font-size: 0.75rem; color: var(--md-default-fg-color--light); margin-top: 0.5rem;">
-    <strong>Disclaimer:</strong> Information provided "as is" with no guarantee of accuracy. Board-level repair involves risk — you accept full responsibility for any outcomes. Not professional repair advice.
-    <a href="/disclaimer/">Full disclaimer</a>.
-  </p>
+  <div style="background: var(--md-footer-bg-color); padding: 0.5rem 1rem; text-align: center; border-top: 1px solid var(--md-footer-bg-color--dark);">
+    <p style="font-size: 0.7rem; color: var(--md-footer-fg-color--lighter); margin: 0;">
+      <strong>Disclaimer:</strong> Information provided "as is" with no guarantee of accuracy. Board-level repair involves risk — you accept full responsibility for any outcomes. Not professional repair advice.
+      <a href="/disclaimer/" style="color: var(--md-footer-fg-color--light);">Full disclaimer</a>.
+    </p>
+  </div>
 {% endblock %}
