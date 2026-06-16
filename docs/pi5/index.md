@@ -4,6 +4,16 @@ Repair reference data for Raspberry Pi 5 boards.
 
 The Pi 5 does not use a "Model A" / "Model B" designation — there is a single board design with multiple RAM configurations (1GB, 2GB, 4GB, 8GB, 16GB). Revisions reflect PCB-level hardware changes.
 
+## Board Photos
+
+### Top
+
+![Pi 5 board top](images/pi5_board_top.png)
+
+### Bottom
+
+![Pi 5 board bottom](images/pi5_board_bottom.png)
+
 ## Revisions
 
 | Revision | Key Changes | Status |
