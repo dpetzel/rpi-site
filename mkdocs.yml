@@ -52,12 +52,18 @@ nav:
   - Models:
     - Pi 5:
       - Overview: pi5/index.md
-      - Model B:
-        - Overview: pi5/model-b/index.md
-        - Components: pi5/model-b/components.md
-        - Voltages: pi5/model-b/voltages.md
-        - Test Points: pi5/model-b/test-points.md
-        - Failure Modes: pi5/model-b/failure-modes.md
+      - Rev 1.1:
+        - Overview: pi5/rev-1.1/index.md
+        - Components: pi5/rev-1.1/components.md
+        - Voltages: pi5/rev-1.1/voltages.md
+        - Test Points: pi5/rev-1.1/test-points.md
+        - Failure Modes: pi5/rev-1.1/failure-modes.md
+      - Rev 1.0:
+        - Overview: pi5/rev-1.0/index.md
+        - Components: pi5/rev-1.0/components.md
+        - Voltages: pi5/rev-1.0/voltages.md
+        - Test Points: pi5/rev-1.0/test-points.md
+        - Failure Modes: pi5/rev-1.0/failure-modes.md
     - Pi 4:
       - Overview: pi4/index.md
       - Model B:
@@ -66,6 +72,30 @@ nav:
         - Voltages: pi4/model-b/voltages.md
         - Test Points: pi4/model-b/test-points.md
         - Failure Modes: pi4/model-b/failure-modes.md
+        - Rev 1.5:
+          - Overview: pi4/model-b/rev-1.5/index.md
+          - Components: pi4/model-b/rev-1.5/components.md
+          - Voltages: pi4/model-b/rev-1.5/voltages.md
+          - Test Points: pi4/model-b/rev-1.5/test-points.md
+          - Failure Modes: pi4/model-b/rev-1.5/failure-modes.md
+        - Rev 1.4:
+          - Overview: pi4/model-b/rev-1.4/index.md
+          - Components: pi4/model-b/rev-1.4/components.md
+          - Voltages: pi4/model-b/rev-1.4/voltages.md
+          - Test Points: pi4/model-b/rev-1.4/test-points.md
+          - Failure Modes: pi4/model-b/rev-1.4/failure-modes.md
+        - Rev 1.2:
+          - Overview: pi4/model-b/rev-1.2/index.md
+          - Components: pi4/model-b/rev-1.2/components.md
+          - Voltages: pi4/model-b/rev-1.2/voltages.md
+          - Test Points: pi4/model-b/rev-1.2/test-points.md
+          - Failure Modes: pi4/model-b/rev-1.2/failure-modes.md
+        - Rev 1.1:
+          - Overview: pi4/model-b/rev-1.1/index.md
+          - Components: pi4/model-b/rev-1.1/components.md
+          - Voltages: pi4/model-b/rev-1.1/voltages.md
+          - Test Points: pi4/model-b/rev-1.1/test-points.md
+          - Failure Modes: pi4/model-b/rev-1.1/failure-modes.md
     - Pi 3:
       - Overview: pi3/index.md
       - 3B:
@@ -74,18 +104,36 @@ nav:
         - Voltages: pi3/3b/voltages.md
         - Test Points: pi3/3b/test-points.md
         - Failure Modes: pi3/3b/failure-modes.md
+        - Rev 1.2:
+          - Overview: pi3/3b/rev-1.2/index.md
+          - Components: pi3/3b/rev-1.2/components.md
+          - Voltages: pi3/3b/rev-1.2/voltages.md
+          - Test Points: pi3/3b/rev-1.2/test-points.md
+          - Failure Modes: pi3/3b/rev-1.2/failure-modes.md
       - 3B+:
         - Overview: pi3/3b-plus/index.md
         - Components: pi3/3b-plus/components.md
         - Voltages: pi3/3b-plus/voltages.md
         - Test Points: pi3/3b-plus/test-points.md
         - Failure Modes: pi3/3b-plus/failure-modes.md
+        - Rev 1.3:
+          - Overview: pi3/3b-plus/rev-1.3/index.md
+          - Components: pi3/3b-plus/rev-1.3/components.md
+          - Voltages: pi3/3b-plus/rev-1.3/voltages.md
+          - Test Points: pi3/3b-plus/rev-1.3/test-points.md
+          - Failure Modes: pi3/3b-plus/rev-1.3/failure-modes.md
       - 3A+:
         - Overview: pi3/3a-plus/index.md
         - Components: pi3/3a-plus/components.md
         - Voltages: pi3/3a-plus/voltages.md
         - Test Points: pi3/3a-plus/test-points.md
         - Failure Modes: pi3/3a-plus/failure-modes.md
+        - Rev 1.0:
+          - Overview: pi3/3a-plus/rev-1.0/index.md
+          - Components: pi3/3a-plus/rev-1.0/components.md
+          - Voltages: pi3/3a-plus/rev-1.0/voltages.md
+          - Test Points: pi3/3a-plus/rev-1.0/test-points.md
+          - Failure Modes: pi3/3a-plus/rev-1.0/failure-modes.md
   - About: about.md
   - Disclaimer: disclaimer.md
   - Disclosure: disclosure.md
