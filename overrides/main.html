@@ -1,1 +1,10 @@
 {% extends "base.html" %}
+
+{% block content %}
+  {{ super() }}
+  <hr style="margin-top: 2rem;">
+  <p style="font-size: 0.75rem; color: var(--md-default-fg-color--light); margin-top: 0.5rem;">
+    <strong>Disclaimer:</strong> Information provided "as is" with no guarantee of accuracy. Board-level repair involves risk — you accept full responsibility for any outcomes. Not professional repair advice.
+    <a href="/disclaimer/">Full disclaimer</a>.
+  </p>
+{% endblock %}
