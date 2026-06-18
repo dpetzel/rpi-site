@@ -62,6 +62,7 @@ nav:
         - Voltages: pi5/rev-1.0/voltages.md
         - Test Points: pi5/rev-1.0/test-points.md
         - Failure Modes: pi5/rev-1.0/failure-modes.md
+      - PMIC: pi5/pmic.md
     - Pi 4:
       - Overview: pi4/index.md
       - Model B:
