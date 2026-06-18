@@ -21,10 +21,10 @@ on either of its vertical axis.
 
 Ground was established without power and testing continuity.
 
-5.3v was measured with the board plugged in and nothing else.These initial mapping was
-focused on what was connected directly to the USB C input. Its not an exhaustive live
+5.3v was measured with the board plugged in and nothing else.This initial mapping was
+focused on what was connected directly to the USB C input. Its not an exhaustive list
 of 5v pads, but rather those pads which are getting 5v directly from the input rail. 
-These in theory represent the input the power to the PMIC itself. 
+These in theory represent the input power to the PMIC itself. 
 
 <div style="display: flex; gap: 1rem; flex-wrap: wrap; ">
   <figure style="flex: 1; min-width: 150px; margin: 0; width: 150px">
