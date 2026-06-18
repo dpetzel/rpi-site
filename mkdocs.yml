@@ -7,6 +7,9 @@ repo_url: https://github.com/dpetzel/rpi-site
 repo_name: dpetzel/rpi-site
 edit_uri: edit/main/docs/
 
+watch:
+  - ./docs
+
 theme:
   name: material
   custom_dir: overrides

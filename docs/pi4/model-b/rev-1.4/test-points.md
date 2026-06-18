@@ -1,13 +1,20 @@
 # Pi 4 Model B Rev 1.4 - Test Points
 
-<!-- TODO: Populate test point map for Pi 4 Model B Rev 1.4 -->
+## Board Image
+![Test Points](/pi4/model-b/rev-1.4/images/test_points.jpg)
 
-Test point locations and expected readings for the Raspberry Pi 4 Model B, PCB revision 1.4.
+<!-- TODO: Populate test point map for Pi 4 Model B Rev 1.2 -->
 
-| Test Point | Location | Expected Reading | Conditions | Notes |
-|-----------|----------|-----------------|------------|-------|
-| | | | | |
+## Readings
+### Power Only
+These measurements were taken with the board plugged in/powered on, and
+*nothing* else plugged in including no SD Card inserted
 
----
+
+### OS Idle
+These measurements were taken with the board booted into Raspberry PI OS.
+These tests are different from Power Only in that the SD card is inserted
+and we have booted from it.
+
 
 *Want to help fill in this page? See [Contributing](/contributing/).*
