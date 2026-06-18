@@ -132,6 +132,8 @@ nav:
           - Voltages: pi3/3a-plus/rev-1.0/voltages.md
           - Test Points: pi3/3a-plus/rev-1.0/test-points.md
           - Failure Modes: pi3/3a-plus/rev-1.0/failure-modes.md
+  - Guides:
+    - Updating EEProm: guides/update_eeprom.md
   - About: about.md
   - Disclaimer: disclaimer.md
   - Disclosure: disclosure.md
