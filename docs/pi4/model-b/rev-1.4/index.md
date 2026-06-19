@@ -11,11 +11,7 @@ Board-level repair reference for the Raspberry Pi 4 Model B, PCB revision 1.4.
 - **Key changes from Rev 1.2:** VL805 USB controller EEPROM removed (firmware loaded by SoC bootloader instead)
 
 ## Sections
-
-- [Components](components.md) - Key ICs and components
-- [Voltages](voltages.md) - Voltage rail reference
 - [Test Points](test-points.md) - Test point map and expected readings
-- [Failure Modes](failure-modes.md) - Known failure patterns
 
 ---
 

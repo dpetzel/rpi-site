@@ -11,11 +11,8 @@ Board-level repair reference for the Raspberry Pi 4 Model B, PCB revision 1.5.
 - **Key changes from Rev 1.4:** BCM2711 C0 stepping, default clock raised to 1.8GHz, improved thermal performance
 
 ## Sections
-
-- [Components](components.md) - Key ICs and components
-- [Voltages](voltages.md) - Voltage rail reference
 - [Test Points](test-points.md) - Test point map and expected readings
-- [Failure Modes](failure-modes.md) - Known failure patterns
+
 
 ---
 
