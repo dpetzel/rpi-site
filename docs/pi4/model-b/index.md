@@ -13,11 +13,4 @@ Available in 1GB, 2GB, 3GB, 4GB, and 8GB RAM configurations. The PCB revision de
 | [Rev 1.2](rev-1.2/index.md) | USB-C fix, power regulator upgrade for 8GB | TODO |
 | [Rev 1.1](rev-1.1/index.md) | Initial release (USB-C PD bug) | TODO |
 
-## Common Sections
 
-These pages cover information shared across all revisions:
-
-- [Components](components.md) - Key ICs and components (common across revisions)
-- [Voltages](voltages.md) - Voltage rail reference
-- [Test Points](test-points.md) - Test point map and expected readings
-- [Failure Modes](failure-modes.md) - Known failure patterns
