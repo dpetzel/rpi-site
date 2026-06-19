@@ -58,7 +58,7 @@ nav:
         - Test Points: pi5/rev-1.1/test-points.md
       - Rev 1.0:
         - Overview: pi5/rev-1.0/index.md
-        - Voltages: pi5/rev-1.0/voltages.md
+        - Test Points: pi5/rev-1.0/test-points.md
       - PMIC: pi5/pmic/index.md
     - Pi 4:
       - Overview: pi4/index.md
