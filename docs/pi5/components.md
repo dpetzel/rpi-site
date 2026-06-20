@@ -26,7 +26,7 @@
     <td>
       <a href="https://forums.raspberrypi.com/viewtopic.php?t=397399">Raspberry PI Forum</a>
     </td>
-    <td></td>
+    <td>AP22652W6-7</td>
   </tr>
   <tr>
     <td>U2</td>
