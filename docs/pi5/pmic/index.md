@@ -37,6 +37,14 @@ These in theory represent the input power to the PMIC itself.
   </figure>
 </div>
 
+<br />
+<br />
+
+The following image was taken with the DA 9091 chip physically
+removed from the board showing the pad layout that is on 
+the underside of the chip.
+![Board Pads Under PMIC](images/pi5_under_pmic_pads.jpg)
+
 ## Area Breakout
 
 ![Indexed Component List](images/pi5_pmic_area_indexed.png)
