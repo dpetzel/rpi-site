@@ -472,5 +472,31 @@
     <td></td>
   </tr>
 
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>FB1</td>
+    <td>Ferrite Bead</td>
+    <td>0402</td>
+    <td>220 Ω</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=378124#p2261274">Raspberry Pi Forum</a>
+    </td>
+    <td>
+      Murata BLM15PX221SN1D 220 Ohms @ 100 MHz 1 Power Line Ferrite Bead 0402 (1005 Metric) 1.4A 100mOhm
+      <br />
+      Near TP65
+    </td>
+  </tr>
+
 
 </table>
