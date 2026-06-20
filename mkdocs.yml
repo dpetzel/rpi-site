@@ -59,6 +59,7 @@ nav:
       - Rev 1.0:
         - Overview: pi5/rev-1.0/index.md
         - Test Points: pi5/rev-1.0/test-points.md
+      - Components:  pi5/components.md
       - PMIC: pi5/pmic/index.md
     - Pi 4:
       - Overview: pi4/index.md
