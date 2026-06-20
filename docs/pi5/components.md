@@ -53,7 +53,7 @@
   <tr>
     <td>U4</td>
     <td>RAM</td>
-    <td></td>
+    <td>BGA</td>
     <td></td>
     <td></td>
     <td></td>
@@ -62,20 +62,22 @@
   <tr>
     <td>U5</td>
     <td>SOC</td>
+    <td>BGA</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>BCM2712</td>
   </tr>
   <tr>
     <td>U6</td>
+    <td>I/O Controller</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>
+      <a href="https://magazine.raspberrypi.com/articles/raspberry-pi-5">Raspberry Pi Magazine</a>
+    </td>
+    <td>RP1 (Southbridge)</td>
   </tr>
   <tr>
     <td>U7</td>
@@ -298,7 +300,86 @@
     <td>Status LED (Red/Green)</td>
   </tr>
 
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>L1</td>
+    <td rowspan="4" style="vertical-align: middle;">Inductor</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td rowspan="4" style="vertical-align: middle;">
+      <a href="https://magazine.raspberrypi.com/articles/raspberry-pi-5">Raspberry Pi Magazine</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>L2</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>L3</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>L4</td>
+    <td></td>
+  </tr>
+
 </table>
 
 ## Bottom
 ![PI 5 Bottom Components](/pi5/images/pi5_components_bottom.png)
+
+<table>
+  <tr>
+    <th>Label</th>
+    <th>Type</th>
+    <th>Package</th>
+    <th>Value</th>
+    <th>Replacement(s)</th>
+    <th>Source(s)</th>
+    <th>Notes</th>
+  </tr>
+
+  <tr>
+    <td>J9</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <a href="https://www.digikey.com/short/cwcj9225">DigiKey</a>
+    </td>
+    <td></td>
+    <td>Micro SD Card Slot</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>U12</td>
+    <td>N-Channel Mosfet</td>
+    <td></td>
+    <td></td>
+    <td>
+      <a href="https://www.digikey.com/short/9dd52j4n">DigiKey</a>
+    </td>
+    <td></td>
+    <td>DMG7430LFG-7</td>
+  </tr>
+</table>
