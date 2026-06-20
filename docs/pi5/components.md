@@ -333,6 +333,31 @@
     <td></td>
   </tr>
 
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>C2</td>
+    <td rowspan="2" style="vertical-align: middle;">Capacitor</td>
+    <td rowspan="2" style="vertical-align: middle;">0402</td>
+    <td rowspan="2" style="vertical-align: middle;">4.7µF</td>
+    <td rowspan="2" style="vertical-align: middle;"></td>
+    <td rowspan="2" style="vertical-align: middle;">
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2284048#p2284090">Raspberry Pi Forum<a>
+    </td>
+    <td rowspan="2" style="vertical-align: middle;">Near the PWR silkscreen</td>
+  </tr>
+  <tr>
+    <td>C3</td>
+  </tr>
+
 </table>
 
 ## Bottom
@@ -382,4 +407,70 @@
     <td></td>
     <td>DMG7430LFG-7</td>
   </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>C1</td>
+    <td>Capacitor</td>
+    <td>0201</td>
+    <td>1uF</td>
+    <td>
+      <a href="https://www.digikey.com/short/q9bq50vc">DigiKey</a>
+    </td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=399050#p2379907">Raspberry Pi Forum</a>
+    </td>
+    <td>
+      Murata Electronics GRM033R60J105ME11D <br />
+      Located between TP37 & TP8 <br /><br />
+      Used to stabilise the Real Time Clock battery rail.
+    </td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>R1</td>
+    <td>Resistor</td>
+    <td>0201</td>
+    <td>1K Ω</td>
+    <td></td>
+    <td rowspan="4" style="vertical-align: middle;">
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2284048#p2284090">Raspberry Pi Forum</a>
+    </td>
+    <td rowspan="4" style="vertical-align: middle;">Midway between SD Slot and U12</td>
+  </tr>
+  <tr>
+    <td>R2</td>
+    <td>Resistor</td>
+    <td>0201</td>
+    <td>10K Ω</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>R3</td>
+    <td>Resistor</td>
+    <td>0201</td>
+    <td>1K Ω</td>
+    <td></td>
+  </tr>
+
+
 </table>
