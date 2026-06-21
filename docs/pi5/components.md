@@ -569,7 +569,7 @@
     <td>
       <a href="https://forums.raspberrypi.com/viewtopic.php?p=2259191#p2260470">Raspberry Pi Forum</a>
     </td>
-    <td>Near TP64</td>
+    <td>Near TP2</td>
   </tr>
 
   <tr>
