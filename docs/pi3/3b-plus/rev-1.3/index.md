@@ -1,8 +1,12 @@
 # Pi 3 Model B+ - Rev 1.3
 
-<!-- TODO: Fill in board-level repair reference for Pi 3 Model B+ Rev 1.3 -->
-
 Board-level repair reference for the Raspberry Pi 3 Model B+, PCB revision 1.3.
+
+## Board Photos
+|   |   |
+| - | - |
+| ![PI 3 B+ Top View](images/pi3-bplus-top.jpg) | ![PI 3 B+ Bottom View](images/pi3-bplus-bottom.jpg)
+
 
 ## Identification
 
@@ -13,6 +17,7 @@ Board-level repair reference for the Raspberry Pi 3 Model B+, PCB revision 1.3.
 
 ## Sections
 - [Test Points](test-points.md) - Test point map and expected readings
+- [Voltage Reference](voltage_reference.md) - Voltage reading from many places across the board
 
 ---
 

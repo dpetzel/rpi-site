@@ -88,7 +88,9 @@ nav:
         - Overview: pi3/3b-plus/index.md
         - Rev 1.3:
           - Overview: pi3/3b-plus/rev-1.3/index.md
+          - Components: pi3/3b-plus/rev-1.3/components.md
           - Test Points: pi3/3b-plus/rev-1.3/test-points.md
+          - Voltage Reference: pi3/3b-plus/rev-1.3/voltage_reference.md
       - 3A+:
         - Overview: pi3/3a-plus/index.md
         - Rev 1.0:
