@@ -35,6 +35,8 @@
     <td></td>
     <td>
         <a href="https://thepihut.com/products/da9091-pmic-5-pack">Pi Hut</a>
+        <br />
+        <a href="https://shop.repairtech.bg/product/da9091/">Repair Tech Shop</a>
     </td>
     <td></td>
     <td>
@@ -286,8 +288,12 @@
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>
+      <a href="https://www.digikey.co.uk/short/3mtv8f9n">DigiKey</a>
+    </td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2364163&hilit=PI+5+Component#p2364162">Raspberry Pi Forum</a>
+    </td>
     <td>Physical Power Switch</td>
   </tr>
   <tr>
@@ -331,6 +337,38 @@
   <tr>
     <td>L4</td>
     <td></td>
+  </tr>
+
+  <tr>
+    <td>L5</td>
+    <td>Inductor</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2364163&hilit=PI+5+Component#p2364162">Raspberry Pi Forum</a>
+    </td>
+    <td>
+      Inductor, SMT, 2012, 470n, IRMS=4A, ISAT=4.6A, DCR(max)=35mR
+      <br />
+      Near PMIC
+    </td>
+  </tr>
+
+  <tr>
+    <td>L6</td>
+    <td>Inductor</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2265904#p2265925">Raspberry Pi Forum</a>
+    </td>
+    <td>
+       Bourns part number SRP201208-R47MH
+       <br />
+       Inductor, SMT, 0805, 470n, IRMS=4A, ISAT=4.6A, DCR(max)=35mR
+    </td>
   </tr>
 
   <tr>
@@ -437,6 +475,23 @@
   </tr>
 
   <tr>
+    <td>C4</td>
+    <td>Capacitor</td>
+    <td>0603</td>
+    <td>22uF</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2356885&hilit=PI+5+Component#p2356889">Raspberry Pi Forum</a>
+    </td>
+    <td>
+      ceramic capacitor.
+      22uF, 6.3V, X5R, 20%, 0603.
+      <br />
+      Near TP34
+    </td>
+  </tr>
+
+  <tr>
     <td>C234</td>
     <td>Capacitor</td>
     <td>0603</td>
@@ -503,6 +558,18 @@
     <td>0201</td>
     <td>1K Ω</td>
     <td></td>
+  </tr>
+
+  <tr>
+    <td>R4</td>
+    <td>Resistor</td>
+    <td>0201</td>
+    <td>18K Ω</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2259191#p2260470">Raspberry Pi Forum</a>
+    </td>
+    <td>Near TP64</td>
   </tr>
 
   <tr>
@@ -588,6 +655,32 @@
       Murata BLM15PX221SN1D 220 Ohms @ 100 MHz 1 Power Line Ferrite Bead 0402 (1005 Metric) 1.4A 100mOhm
       <br />
       Near TP65
+    </td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Q1</td>
+    <td>Mosfet</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2259191#p2260470">Raspberry Pi Forum</a>
+    </td>
+    <td>
+      PMZB600UNELYL N-Channel 20 V 600mA (Ta) 360mW (Ta) Surface Mount DFN1006B-3
+      <br />
+      Near TP2
     </td>
   </tr>
 
