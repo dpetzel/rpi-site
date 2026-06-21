@@ -437,6 +437,39 @@
   </tr>
 
   <tr>
+    <td>C234</td>
+    <td>Capacitor</td>
+    <td>0603</td>
+    <td>22uF</td>
+    <td>
+      <a href="https://www.digikey.co.uk/short/5hfh7zcf">DigiKey</a>
+    </td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2365706&hilit=PI+5+Component#p2352563">Raspberry Pi Forum</a>
+    </td>
+    <td>
+       22uF 6V3 X5R 10%
+       <br />
+       Just north of TP26
+    </td>
+  </tr>
+  <tr>
+    <td>C263</td>
+    <td>Capacitor</td>
+    <td>0402</td>
+    <td>4u7</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2365706&hilit=PI+5+Component#p2352563">Raspberry Pi Forum</a>
+    </td>
+    <td>
+       4u7 6V3 X5R 20% 0402
+       <br />
+       Near TP46
+    </td>
+  </tr>
+
+  <tr>
     <td></td>
     <td></td>
     <td></td>
@@ -452,10 +485,10 @@
     <td>0201</td>
     <td>1K Ω</td>
     <td></td>
-    <td rowspan="4" style="vertical-align: middle;">
+    <td rowspan="3" style="vertical-align: middle;">
       <a href="https://forums.raspberrypi.com/viewtopic.php?p=2284048#p2284090">Raspberry Pi Forum</a>
     </td>
-    <td rowspan="4" style="vertical-align: middle;">Midway between SD Slot and U12</td>
+    <td rowspan="3" style="vertical-align: middle;">Midway between SD Slot and U12</td>
   </tr>
   <tr>
     <td>R2</td>
@@ -470,6 +503,66 @@
     <td>0201</td>
     <td>1K Ω</td>
     <td></td>
+  </tr>
+
+  <tr>
+    <td>R15</td>
+    <td></td>
+    <td>0201</td>
+    <td>470 Ω</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2365706&hilit=PI+5+Component#p2352563">Raspberry Pi Forum</a>
+    </td>
+    <td>Near TP64</td>
+  </tr>
+
+  <tr>
+    <td>R17</td>
+    <td></td>
+    <td>0201</td>
+    <td>470 Ω</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2365706&hilit=PI+5+Component#p2352563">Raspberry Pi Forum</a>
+    </td>
+    <td>Near TP64</td>
+  </tr>
+
+  <tr>
+    <td>R46</td>
+    <td></td>
+    <td>0201</td>
+    <td>2K Ω</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2365706&hilit=PI+5+Component#p2352563">Raspberry Pi Forum</a>
+    </td>
+    <td>Near TP64</td>
+  </tr>
+
+  <tr>
+    <td>R47</td>
+    <td></td>
+    <td>0201</td>
+    <td>2K Ω</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2365706&hilit=PI+5+Component#p2352563">Raspberry Pi Forum</a>
+    </td>
+    <td>Near TP64</td>
+  </tr>
+
+  <tr>
+    <td>R93</td>
+    <td></td>
+    <td>0201</td>
+    <td>10K Ω</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2365706&hilit=PI+5+Component#p2352563">Raspberry Pi Forum</a>
+    </td>
+    <td>Near TP46</td>
   </tr>
 
   <tr>
