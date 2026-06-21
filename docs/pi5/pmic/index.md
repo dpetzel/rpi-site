@@ -42,8 +42,20 @@ These in theory represent the input power to the PMIC itself.
 
 The following image was taken with the DA 9091 chip physically
 removed from the board showing the pad layout that is on 
-the underside of the chip.
-![Board Pads Under PMIC](images/pi5_under_pmic_pads.jpg)
+the underside of the chip. Measurements were taken with the USB-C
+plugged in and the PMIC removed to try and highlight where 5v
+enters the PMIC
+
+<div style="display: flex; gap: 1rem; flex-wrap: wrap; ">
+  <figure style="flex: 1; min-width: 150px; margin: 0; width: 150px">
+    <img src="images/pi5_under_pmic_pads.jpg" alt="Board Photo" style="width: 100%;">
+     <figcaption style="text-align: center; font-size: 0.8rem;">Board Photo</figcaption>
+  </figure>
+  <figure style="flex: 1; min-width: 150px; margin: 0; width: 150px">
+    <img src="images/pi5_under_pmic_pad_voltages.png" alt="Annotated Board Photo<" style="width: 100%;">
+     <figcaption style="text-align: center; font-size: 0.8rem;">Annotated Board Photo</figcaption>
+  </figure>
+</div>
 
 ## Area Breakout
 
