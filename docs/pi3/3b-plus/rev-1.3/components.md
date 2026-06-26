@@ -1,7 +1,34 @@
 # Pi 3 B+ Rev 1.3 Components
 
+## Legend
+| Component Type       | Reference Designator Letter |
+| -------------------- | --------------------------- |
+| Resistors            | `R` |
+| Capacitors           | `C` |
+| Inductors            | `L` |
+| Diodes               | `D` |
+| Integrated Circuits  | `U` |
+| Transistors          | `Q` |
+| Connectors           | `J` |
+| Fuses                | `F` |
+| Relays               | `K` |
+| Transformers         | `T` |
+| Motors               | `M` |
+| Switches             | `S` |
+| Headers              | `H` |
+| Plugs                | `P` |
+| Crystal Oscillators  | `Y` |
+| Miscellaneous        | `X` |
+| Unknown              | `Z` |
+
+When a component identifier includes a `*` it
+means the number is the official number from
+the schematic, not our own internal number.
+
+
 ## Top
 ![Top Components](images/components-top.jpg)
+
 
 <table>
   <tr>
@@ -137,7 +164,7 @@
   </tr>
 
   <tr>
-    <td>U1</td>
+    <td>U1*</td>
     <td>SOC</td>
     <td></td>
     <td></td>
@@ -148,7 +175,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>U8</td>
+    <td>U8*</td>
     <td>PMIC</td>
     <td>QFN</td>
     <td></td>
