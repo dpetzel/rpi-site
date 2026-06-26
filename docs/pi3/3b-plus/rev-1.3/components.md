@@ -230,34 +230,3 @@
     <td></td>
   </tr>
 </table>
-
-## Legend
-| Component Type       | Reference Designator Letter |
-| -------------------- | --------------------------- |
-| Resistors            | `R` |
-| Capacitors           | `C` |
-| Inductors            | `L` |
-| Diodes               | `D` |
-| Integrated Circuits  | `U` |
-| Transistors          | `Q` |
-| Connectors           | `J` |
-| Fuses                | `F` |
-| Relays               | `K` |
-| Transformers         | `T` |
-| Motors               | `M` |
-| Switches             | `S` |
-| Headers              | `H` |
-| Plugs                | `P` |
-| Crystal Oscillators  | `Y` |
-| Miscellaneous        | `X` |
-| Unknown              | `Z` |
-
-
-**NOTE** We don't have full/official schematics.
-As a result we are using our own numbering. The
-numbers here will not align with official numbering
-should Raspberry Pi ever release that information.
-
-When a component identifier includes a `*` it
-means the number is the official number from
-the schematic, not our own internal number.
