@@ -1,30 +1,5 @@
 # Pi 3 B+ Rev 1.3 Components
 
-## Legend
-| Component Type       | Reference Designator Letter |
-| -------------------- | --------------------------- |
-| Resistors            | `R` |
-| Capacitors           | `C` |
-| Inductors            | `L` |
-| Diodes               | `D` |
-| Integrated Circuits  | `U` |
-| Transistors          | `Q` |
-| Connectors           | `J` |
-| Fuses                | `F` |
-| Relays               | `K` |
-| Transformers         | `T` |
-| Motors               | `M` |
-| Switches             | `S` |
-| Headers              | `H` |
-| Plugs                | `P` |
-| Crystal Oscillators  | `Y` |
-| Miscellaneous        | `X` |
-| Unknown              | `Z` |
-
-When a component identifier includes a `*` it
-means the number is the official number from
-the schematic, not our own internal number.
-
 
 ## Top
 ![Top Components](images/components-top.jpg)
@@ -172,7 +147,22 @@ the schematic, not our own internal number.
     <td>
       <a href="https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf">Schematic</a>
     </td>
+    <td>
+    BCM2837B
+    </td>
+  </tr>
+  <tr>
+    <td>U5*</td>
     <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <a href="https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf">Schematic</a>
+    </td>
+    <td>
+        BCM2837B
+    </td>
   </tr>
   <tr>
     <td>U8*</td>
@@ -186,6 +176,32 @@ the schematic, not our own internal number.
     <td>
         If attempting to source a replacement, it must have `-R3` printed on the chip. 
         This appears to be a custom built IC for RPI.
+    </td>
+  </tr>
+  <tr>
+    <td>U9*</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <a href="https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf">Schematic</a>
+    </td>
+    <td>
+        RT9741CGV
+    </td>
+  </tr>
+  <tr>
+    <td>U11*</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <a href="https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf">Schematic</a>
+    </td>
+    <td>
+        NC7WZ16
     </td>
   </tr>
 </table>
@@ -214,3 +230,34 @@ the schematic, not our own internal number.
     <td></td>
   </tr>
 </table>
+
+## Legend
+| Component Type       | Reference Designator Letter |
+| -------------------- | --------------------------- |
+| Resistors            | `R` |
+| Capacitors           | `C` |
+| Inductors            | `L` |
+| Diodes               | `D` |
+| Integrated Circuits  | `U` |
+| Transistors          | `Q` |
+| Connectors           | `J` |
+| Fuses                | `F` |
+| Relays               | `K` |
+| Transformers         | `T` |
+| Motors               | `M` |
+| Switches             | `S` |
+| Headers              | `H` |
+| Plugs                | `P` |
+| Crystal Oscillators  | `Y` |
+| Miscellaneous        | `X` |
+| Unknown              | `Z` |
+
+
+**NOTE** We don't have full/official schematics.
+As a result we are using our own numbering. The
+numbers here will not align with official numbering
+should Raspberry Pi ever release that information.
+
+When a component identifier includes a `*` it
+means the number is the official number from
+the schematic, not our own internal number.
