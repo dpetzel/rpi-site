@@ -142,8 +142,24 @@
     <td></td>
     <td></td>
     <td></td>
+    <td>
+      <a href="https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf">Schematic</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>U8</td>
+    <td>PMIC</td>
+    <td>QFN</td>
     <td></td>
     <td></td>
+    <td>
+      <a href="https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf">Schematic</a>
+    </td>
+    <td>
+        If attempting to source a replacement, it must have `-R3` printed on the chip. 
+        This appears to be a custom built IC for RPI.
+    </td>
   </tr>
 </table>
 
