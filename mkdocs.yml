@@ -68,6 +68,7 @@ nav:
         - Rev 1.5:
           - Overview: pi4/model-b/rev-1.5/index.md
           - Test Points: pi4/model-b/rev-1.5/test-points.md
+          - Components: pi4/model-b/rev-1.5/components.md
         - Rev 1.4:
           - Overview: pi4/model-b/rev-1.4/index.md
           - Test Points: pi4/model-b/rev-1.4/test-points.md
