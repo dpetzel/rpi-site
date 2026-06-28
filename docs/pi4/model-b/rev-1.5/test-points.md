@@ -1,7 +1,7 @@
 # Pi 4 Model B Rev 1.5 - Test Points
 
 ## Board Image
-![Test Points](images/pi4_b_1.5_test-points.jpg)
+![Test Points](images/pi4_b_1.5_test-points.png)
 
 ## Readings
 
