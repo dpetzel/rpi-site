@@ -97,6 +97,36 @@ nav:
         - Rev 1.0:
           - Overview: pi3/3a-plus/rev-1.0/index.md
           - Test Points: pi3/3a-plus/rev-1.0/test-points.md
+    - Pi 2:
+      - Overview: pi2/index.md
+      - Model B:
+        - Overview: pi2/model-b/index.md
+        - Rev 1.2:
+          - Overview: pi2/model-b/rev-1.2/index.md
+          - Test Points: pi2/model-b/rev-1.2/test-points.md
+        - Rev 1.1:
+          - Overview: pi2/model-b/rev-1.1/index.md
+          - Test Points: pi2/model-b/rev-1.1/test-points.md
+    - Pi Zero:
+      - Overview: pi-zero/index.md
+      - Zero 2 W:
+        - Overview: pi-zero/zero-2w/index.md
+        - Rev 1.0:
+          - Overview: pi-zero/zero-2w/rev-1.0/index.md
+          - Test Points: pi-zero/zero-2w/rev-1.0/test-points.md
+      - Zero W:
+        - Overview: pi-zero/zero-w/index.md
+        - Rev 1.1:
+          - Overview: pi-zero/zero-w/rev-1.1/index.md
+          - Test Points: pi-zero/zero-w/rev-1.1/test-points.md
+      - Zero:
+        - Overview: pi-zero/zero/index.md
+        - Rev 1.3:
+          - Overview: pi-zero/zero/rev-1.3/index.md
+          - Test Points: pi-zero/zero/rev-1.3/test-points.md
+        - Rev 1.2:
+          - Overview: pi-zero/zero/rev-1.2/index.md
+          - Test Points: pi-zero/zero/rev-1.2/test-points.md
   - Guides:
     - Updating EEProm: guides/update_eeprom.md
   - About: about.md
