@@ -24,7 +24,6 @@ jobs:
       - name: Find XCF files needing PNG export
         id: find-xcf
         run: |
-          # Find all XCF files that don't have a corresponding PNG
           > /tmp/xcf_to_convert.txt
           find docs -name "*.xcf" | while IFS= read -r xcf; do
             png="${xcf%.xcf}.png"
@@ -33,7 +32,6 @@ jobs:
             fi
           done
 
-          # On push events, also re-convert any changed XCFs
           if [ "${{ github.event_name }}" = "push" ]; then
             git diff --name-only HEAD~1 HEAD -- '*.xcf' 2>/dev/null | while IFS= read -r xcf; do
               [ -f "$xcf" ] || continue
@@ -56,17 +54,27 @@ jobs:
             abs_png="$(pwd)/$png"
 
             echo "Converting: $xcf -> $png"
-            flatpak run org.gimp.GIMP -i -b \
-              "(let* ((image (car (gimp-file-load RUN-NONINTERACTIVE \"$abs_xcf\" \"$abs_xcf\")))
-                      (drawable (car (gimp-image-merge-visible-layers image CLIP-TO-IMAGE))))
-                (file-png-save RUN-NONINTERACTIVE image drawable \"$abs_png\" \"$abs_png\" 0 9 1 1 1 1 1)
-                (gimp-image-delete image)
-                (gimp-quit 0))"
+            timeout 120 flatpak run org.gimp.GIMP -i -n \
+              --batch-interpreter=plug-in-script-fu-eval \
+              -b "(let* ((image (car (gimp-file-load RUN-NONINTERACTIVE \"$abs_xcf\" \"$abs_xcf\")))
+                        (drawable (car (gimp-image-merge-visible-layers image CLIP-TO-IMAGE))))
+                  (file-png-save RUN-NONINTERACTIVE image drawable \"$abs_png\" \"$abs_png\" 0 9 1 1 1 1 1)
+                  (gimp-image-delete image))" \
+              -b "(gimp-quit 0)" || {
+                echo "  GIMP exited with error, retrying without sandbox..."
+                timeout 120 flatpak run --no-sandboxing org.gimp.GIMP -i -n \
+                  --batch-interpreter=plug-in-script-fu-eval \
+                  -b "(let* ((image (car (gimp-file-load RUN-NONINTERACTIVE \"$abs_xcf\" \"$abs_xcf\")))
+                            (drawable (car (gimp-image-merge-visible-layers image CLIP-TO-IMAGE))))
+                      (file-png-save RUN-NONINTERACTIVE image drawable \"$abs_png\" \"$abs_png\" 0 9 1 1 1 1 1)
+                      (gimp-image-delete image))" \
+                  -b "(gimp-quit 0)"
+              }
 
             if [ -f "$png" ]; then
               echo "  OK ($(du -h "$png" | cut -f1))"
             else
-              echo "  FAILED"
+              echo "  FAILED: $png was not created"
               exit 1
             fi
           done < /tmp/xcf_to_convert.txt
