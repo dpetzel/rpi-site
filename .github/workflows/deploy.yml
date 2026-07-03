@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
+      - 'requirements.txt'
+      - 'overrides/**'
   workflow_dispatch:
 
 permissions:

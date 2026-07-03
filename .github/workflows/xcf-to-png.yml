@@ -80,6 +80,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No PNG changes to commit"
           else
-            git commit -m "Auto-generate PNG from XCF [skip ci]"
+            git commit -m "Auto-generate PNG from XCF"
             git push
           fi
