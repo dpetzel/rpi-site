@@ -1,7 +1,7 @@
 # Pi 4 Model B Rev 1.4 - Test Points
 
 ## Board Image
-![Test Points](/pi4/model-b/rev-1.4/images/test_points.jpg)
+![Test Points](/pi4/model-b/rev-1.4/images/test_points.png)
 
 <!-- TODO: Populate test point map for Pi 4 Model B Rev 1.2 -->
 

@@ -5,7 +5,7 @@
 ![Board Image Top](images/pi4_b_1.5_components_top.jpg)
 
 ## Bottom
-![Board Image Bottom](images/pi4_b_1.5_components_bottom.jpg)
+![Board Image Bottom](images/pi4_b_1.5_components_bottom.png)
 <table>
   <tr>
     <th>ID</th>

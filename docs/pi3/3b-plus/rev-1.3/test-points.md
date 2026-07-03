@@ -4,7 +4,7 @@
 
 
 ## Board Image
-![Test Points](/pi3/3b-plus/rev-1.3/images/test_points.jpg)
+![Test Points](/pi3/3b-plus/rev-1.3/images/test_points.png)
 
 ## Readings
 

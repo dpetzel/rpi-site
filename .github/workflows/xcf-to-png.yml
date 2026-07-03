@@ -1,0 +1,62 @@
+name: Convert XCF to PNG
+
+on:
+  push:
+    paths:
+      - '**/*.xcf'
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install GIMP
+        run: sudo apt-get update && sudo apt-get install -y gimp
+
+      - name: Find XCF files to convert
+        id: find-xcf
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            # Manual trigger: convert all XCF files missing a PNG
+            find docs -name "*.xcf" | while IFS= read -r xcf; do
+              png="${xcf%.xcf}.png"
+              if [ ! -f "$png" ]; then
+                echo "$xcf"
+              fi
+            done > /tmp/xcf_to_convert.txt
+          else
+            # Push trigger: convert only changed XCF files
+            git diff --name-only HEAD~1 HEAD -- '*.xcf' > /tmp/xcf_to_convert.txt
+          fi
+          echo "count=$(wc -l < /tmp/xcf_to_convert.txt)" >> "$GITHUB_OUTPUT"
+          cat /tmp/xcf_to_convert.txt
+
+      - name: Convert XCF files to PNG
+        if: steps.find-xcf.outputs.count != '0'
+        run: |
+          while IFS= read -r xcf; do
+            [ -f "$xcf" ] || continue
+            png="${xcf%.xcf}.png"
+            gimp -i -b "(let* ((image (car (gimp-file-load RUN-NONINTERACTIVE \"$xcf\" \"$xcf\")))
+                                (drawable (car (gimp-image-merge-visible-layers image CLIP-TO-IMAGE))))
+                          (file-png-save RUN-NONINTERACTIVE image drawable \"$png\" \"$png\" 0 9 1 1 1 1 1)
+                          (gimp-image-delete image))" -b "(gimp-quit 0)"
+            echo "Converted: $xcf -> $png"
+          done < /tmp/xcf_to_convert.txt
+
+      - name: Commit PNG files
+        if: steps.find-xcf.outputs.count != '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add '*.png'
+          if git diff --cached --quiet; then
+            echo "No PNG changes to commit"
+          else
+            git commit -m "Auto-generate PNG from XCF [skip ci]"
+            git push
+          fi

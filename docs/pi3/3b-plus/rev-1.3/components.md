@@ -2,7 +2,7 @@
 
 
 ## Top
-![Top Components](images/components-top.jpg)
+![Top Components](images/components-top.png)
 
 
 <table>

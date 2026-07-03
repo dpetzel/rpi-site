@@ -1,6 +1,6 @@
 # Pi 5 Rev 1.1 - Test Points
 
-![Test Points](/pi5/rev-1.1/images/pi5_b_1.1_test_points.jpg)
+![Test Points](/pi5/rev-1.1/images/pi5_b_1.1_test_points.png)
 
 ## Readings
 
