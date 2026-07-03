@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '**/*.xcf'
+      - '.github/workflows/xcf-to-png.yml'
   workflow_dispatch:
 
 jobs:
@@ -20,19 +21,25 @@ jobs:
       - name: Find XCF files to convert
         id: find-xcf
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            # Manual trigger: convert all XCF files missing a PNG
-            find docs -name "*.xcf" | while IFS= read -r xcf; do
-              png="${xcf%.xcf}.png"
-              if [ ! -f "$png" ]; then
-                echo "$xcf"
-              fi
-            done > /tmp/xcf_to_convert.txt
-          else
-            # Push trigger: convert only changed XCF files
-            git diff --name-only HEAD~1 HEAD -- '*.xcf' > /tmp/xcf_to_convert.txt
+          # Always check for any XCF missing its PNG export
+          find docs -name "*.xcf" | while IFS= read -r xcf; do
+            png="${xcf%.xcf}.png"
+            if [ ! -f "$png" ]; then
+              echo "$xcf"
+            fi
+          done > /tmp/xcf_to_convert.txt
+
+          # On push events, also re-convert any changed XCFs even if PNG exists
+          if [ "${{ github.event_name }}" = "push" ]; then
+            git diff --name-only HEAD~1 HEAD -- '*.xcf' 2>/dev/null | while IFS= read -r xcf; do
+              [ -f "$xcf" ] || continue
+              grep -qxF "$xcf" /tmp/xcf_to_convert.txt || echo "$xcf" >> /tmp/xcf_to_convert.txt
+            done
           fi
-          echo "count=$(wc -l < /tmp/xcf_to_convert.txt)" >> "$GITHUB_OUTPUT"
+
+          count=$(wc -l < /tmp/xcf_to_convert.txt | tr -d ' ')
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+          echo "Files to convert: $count"
           cat /tmp/xcf_to_convert.txt
 
       - name: Convert XCF files to PNG
