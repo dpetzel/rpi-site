@@ -69,12 +69,12 @@ jobs:
 
             # GIMP 3.0 Script-Fu changes:
             # - gimp-file-load takes single filename (not two)
-            # - file-png-export takes image, vector-of-drawables, single filename
+            # - file-png-export takes: run-mode image file drawables ...options
             timeout 120 flatpak run org.gimp.GIMP -i -n \
               --batch-interpreter=plug-in-script-fu-eval \
               -b "(let* ((image (car (gimp-file-load RUN-NONINTERACTIVE \"$abs_xcf\")))
                         (drawable (car (gimp-image-merge-visible-layers image CLIP-TO-IMAGE))))
-                  (file-png-export RUN-NONINTERACTIVE image (vector drawable) \"$abs_png\")
+                  (file-png-export RUN-NONINTERACTIVE image \"$abs_png\" (vector drawable))
                   (gimp-image-delete image))" \
               -b "(gimp-quit 0)" 2>&1 | tail -20
 
