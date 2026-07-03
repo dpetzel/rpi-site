@@ -18,18 +18,19 @@ jobs:
       - name: Install GIMP
         run: sudo apt-get update && sudo apt-get install -y gimp
 
-      - name: Find XCF files to convert
+      - name: Find XCF files needing PNG export
         id: find-xcf
         run: |
-          # Always check for any XCF missing its PNG export
+          # Find all XCF files that don't have a corresponding PNG
+          > /tmp/xcf_to_convert.txt
           find docs -name "*.xcf" | while IFS= read -r xcf; do
             png="${xcf%.xcf}.png"
             if [ ! -f "$png" ]; then
-              echo "$xcf"
+              echo "$xcf" >> /tmp/xcf_to_convert.txt
             fi
-          done > /tmp/xcf_to_convert.txt
+          done
 
-          # On push events, also re-convert any changed XCFs even if PNG exists
+          # On push events, also re-convert any changed XCFs
           if [ "${{ github.event_name }}" = "push" ]; then
             git diff --name-only HEAD~1 HEAD -- '*.xcf' 2>/dev/null | while IFS= read -r xcf; do
               [ -f "$xcf" ] || continue
@@ -45,14 +46,27 @@ jobs:
       - name: Convert XCF files to PNG
         if: steps.find-xcf.outputs.count != '0'
         run: |
+          # Build a single Script-Fu batch script for all files
+          script=""
           while IFS= read -r xcf; do
             [ -f "$xcf" ] || continue
             png="${xcf%.xcf}.png"
-            gimp -i -b "(let* ((image (car (gimp-file-load RUN-NONINTERACTIVE \"$xcf\" \"$xcf\")))
-                                (drawable (car (gimp-image-merge-visible-layers image CLIP-TO-IMAGE))))
-                          (file-png-save RUN-NONINTERACTIVE image drawable \"$png\" \"$png\" 0 9 1 1 1 1 1)
-                          (gimp-image-delete image))" -b "(gimp-quit 0)"
-            echo "Converted: $xcf -> $png"
+            script="${script}(let* ((image (car (gimp-file-load RUN-NONINTERACTIVE \"$xcf\" \"$xcf\"))) (drawable (car (gimp-image-merge-visible-layers image CLIP-TO-IMAGE)))) (file-png-save RUN-NONINTERACTIVE image drawable \"$png\" \"$png\" 0 9 1 1 1 1 1) (gimp-image-delete image)) "
+          done < /tmp/xcf_to_convert.txt
+
+          # Run all conversions in one GIMP session
+          gimp -i -b "${script}(gimp-quit 0)"
+
+          # Verify outputs
+          echo ""
+          echo "=== Conversion results ==="
+          while IFS= read -r xcf; do
+            png="${xcf%.xcf}.png"
+            if [ -f "$png" ]; then
+              echo "OK: $png ($(du -h "$png" | cut -f1))"
+            else
+              echo "FAILED: $png"
+            fi
           done < /tmp/xcf_to_convert.txt
 
       - name: Commit PNG files
