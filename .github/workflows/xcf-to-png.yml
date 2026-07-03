@@ -15,8 +15,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install GIMP
-        run: sudo apt-get update && sudo apt-get install -y gimp
+      - name: Install GIMP 3.0 via Flatpak
+        run: |
+          sudo apt-get update && sudo apt-get install -y flatpak
+          sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+          sudo flatpak install -y flathub org.gimp.GIMP
 
       - name: Find XCF files needing PNG export
         id: find-xcf
@@ -46,26 +49,25 @@ jobs:
       - name: Convert XCF files to PNG
         if: steps.find-xcf.outputs.count != '0'
         run: |
-          # Build a single Script-Fu batch script for all files
-          script=""
           while IFS= read -r xcf; do
             [ -f "$xcf" ] || continue
             png="${xcf%.xcf}.png"
-            script="${script}(let* ((image (car (gimp-file-load RUN-NONINTERACTIVE \"$xcf\" \"$xcf\"))) (drawable (car (gimp-image-merge-visible-layers image CLIP-TO-IMAGE)))) (file-png-save RUN-NONINTERACTIVE image drawable \"$png\" \"$png\" 0 9 1 1 1 1 1) (gimp-image-delete image)) "
-          done < /tmp/xcf_to_convert.txt
+            abs_xcf="$(pwd)/$xcf"
+            abs_png="$(pwd)/$png"
 
-          # Run all conversions in one GIMP session
-          gimp -i -b "${script}(gimp-quit 0)"
+            echo "Converting: $xcf -> $png"
+            flatpak run org.gimp.GIMP -i -b \
+              "(let* ((image (car (gimp-file-load RUN-NONINTERACTIVE \"$abs_xcf\" \"$abs_xcf\")))
+                      (drawable (car (gimp-image-merge-visible-layers image CLIP-TO-IMAGE))))
+                (file-png-save RUN-NONINTERACTIVE image drawable \"$abs_png\" \"$abs_png\" 0 9 1 1 1 1 1)
+                (gimp-image-delete image)
+                (gimp-quit 0))"
 
-          # Verify outputs
-          echo ""
-          echo "=== Conversion results ==="
-          while IFS= read -r xcf; do
-            png="${xcf%.xcf}.png"
             if [ -f "$png" ]; then
-              echo "OK: $png ($(du -h "$png" | cut -f1))"
+              echo "  OK ($(du -h "$png" | cut -f1))"
             else
-              echo "FAILED: $png"
+              echo "  FAILED"
+              exit 1
             fi
           done < /tmp/xcf_to_convert.txt
 
