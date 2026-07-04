@@ -1,12 +1,12 @@
 # Pi 5 Components
 
 ## Top
-![PI 5 Top Components](/pi5/images/pi5_components_top.png)
-
+![PI 5 Top Components](/pi5/images/pi5_components_top_v2.png)
 
 <table>
   <tr>
-    <th>Label</th>
+    <th>ID</th>
+    <th>Official Label</th>
     <th>Type</th>
     <th>Package</th>
     <th>Value</th>
@@ -14,22 +14,123 @@
     <th>Source(s)</th>
     <th>Notes</th>
   </tr>
-
   <tr>
-    <td>U1</td>
-    <td>Load Switch</td>
-    <td>SOT-26</td>
-    <td>2.1A</td>
-    <td>
-      <a href="https://www.digikey.com/en/products/detail/diodes-incorporated/AP22652W6-7/10481161">DigiKey<a>
-    </td>
-    <td>
-      <a href="https://forums.raspberrypi.com/viewtopic.php?t=397399">Raspberry PI Forum</a>
-    </td>
-    <td>AP22652W6-7</td>
+    <td>1</td>
+    <td></td>
+    <td>SOC</td>
+    <td>BGA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>BCM2712</td>
   </tr>
   <tr>
-    <td>U2</td>
+    <td>2</td>
+    <td></td>
+    <td>BlueTooth/WiFi</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    
+  </tr>
+  <tr>
+    <td>3</td>
+    <td></td>
+    <td>RAM</td>
+    <td>BGA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td></td>
+    <td>I/O Controller</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <a href="https://magazine.raspberrypi.com/articles/raspberry-pi-5">Raspberry Pi Magazine</a>
+    </td>
+    <td>RP1 (Southbridge)</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>J11</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>USB 2</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>J12</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>USB 3</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>J10</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>Ethernet</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>J1</td>
+    <td>USB-C</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>J2</td>
+    <td>HDMI Type D</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>HDMI0</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>J13</td>
+    <td>HDMI Type D</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>HDMI1</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>J8</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>GPIO Pins</td>
+  </tr>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td></td>
     <td>PMIC</td>
     <td>QFN</td>
     <td></td>
@@ -44,208 +145,7 @@
     </td>
   </tr>
   <tr>
-    <td>U3</td>
-    <td>BlueTooth/WiFi</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>U4</td>
-    <td>RAM</td>
-    <td>BGA</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>U5</td>
-    <td>SOC</td>
-    <td>BGA</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>BCM2712</td>
-  </tr>
-  <tr>
-    <td>U6</td>
-    <td>I/O Controller</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>
-      <a href="https://magazine.raspberrypi.com/articles/raspberry-pi-5">Raspberry Pi Magazine</a>
-    </td>
-    <td>RP1 (Southbridge)</td>
-  </tr>
-  <tr>
-    <td>U7</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>U8</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>U9</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>U10</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>U11</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>J1</td>
-    <td>USB-C</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>J2</td>
-    <td>HDMI Type D</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>HDMI0</td>
-  </tr>
-  <tr>
-    <td>J3</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>CAM/DISP 0</td>
-  </tr>
-  <tr>
-    <td>J4</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>CAM/DISP 1</td>
-  </tr>
-  <tr>
-    <td>J5</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>BAT</td>
-  </tr>
-  <tr>
-    <td>J6</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>J7</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>J8</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>GPIO Pins</td>
-  </tr>
-  <tr>
-    <td>J10</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>Ethernet</td>
-  </tr>
-  <tr>
-    <td>J11</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>USB 2</td>
-  </tr>
-  <tr>
-    <td>J12</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>USB 3</td>
-  </tr>
-  <tr>
-    <td>J13</td>
-    <td>HDMI Type D</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>HDMI1</td>
-  </tr>
-  <tr>
+    <td>13</td>
     <td>J14</td>
     <td></td>
     <td></td>
@@ -255,6 +155,121 @@
     <td>POE Pins</td>
   </tr>
   <tr>
+    <td>14</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td></td>
+    <td>Load Switch</td>
+    <td>SOT-26</td>
+    <td>2.1A</td>
+    <td>
+      <a href="https://www.digikey.com/en/products/detail/diodes-incorporated/AP22652W6-7/10481161">DigiKey<a>
+    </td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=397399">Raspberry PI Forum</a>
+    </td>
+    <td>AP22652W6-7</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>J4</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>CAM/DISP 1</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>J3</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>CAM/DISP 0</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>J5</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>BAT</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>25</td>
     <td>J17</td>
     <td></td>
     <td></td>
@@ -263,7 +278,9 @@
     <td></td>
     <td>Fan</td>
   </tr>
+
   <tr>
+    <td>26</td>
     <td>J20</td>
     <td></td>
     <td></td>
@@ -274,16 +291,7 @@
   </tr>
 
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
+    <td>27</td>
     <td>PSW</td>
     <td></td>
     <td></td>
@@ -297,6 +305,7 @@
     <td>Physical Power Switch</td>
   </tr>
   <tr>
+    <td>28</td>
     <td>STAT</td>
     <td></td>
     <td></td>
@@ -307,56 +316,58 @@
   </tr>
 
   <tr>
+    <td>30</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>L1</td>
-    <td rowspan="4" style="vertical-align: middle;">Inductor</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td rowspan="4" style="vertical-align: middle;">
-      <a href="https://magazine.raspberrypi.com/articles/raspberry-pi-5">Raspberry Pi Magazine</a>
-    </td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>L2</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>L3</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>L4</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>L5</td>
     <td>Inductor</td>
     <td></td>
     <td></td>
     <td></td>
     <td>
-      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2364163&hilit=PI+5+Component#p2364162">Raspberry Pi Forum</a>
+      <a href="https://magazine.raspberrypi.com/articles/raspberry-pi-5">Raspberry Pi Magazine</a>
     </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td></td>
+    <td>Inductor</td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td>
-      Inductor, SMT, 2012, 470n, IRMS=4A, ISAT=4.6A, DCR(max)=35mR
-      <br />
-      Near PMIC
+      <a href="https://magazine.raspberrypi.com/articles/raspberry-pi-5">Raspberry Pi Magazine</a>
     </td>
+    <td></td>
   </tr>
 
   <tr>
-    <td>L6</td>
+    <td>33</td>
+    <td></td>
+    <td>Inductor</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td >
+      <a href="https://magazine.raspberrypi.com/articles/raspberry-pi-5">Raspberry Pi Magazine</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td></td>
+    <td>Inductor</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <a href="https://magazine.raspberrypi.com/articles/raspberry-pi-5">Raspberry Pi Magazine</a>
+    </td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>46</td>
+    <td></td>
     <td>Inductor</td>
     <td></td>
     <td></td>
@@ -372,38 +383,67 @@
   </tr>
 
   <tr>
+    <td>65</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>C2</td>
-    <td rowspan="2" style="vertical-align: middle;">Capacitor</td>
-    <td rowspan="2" style="vertical-align: middle;">0402</td>
-    <td rowspan="2" style="vertical-align: middle;">4.7µF</td>
-    <td rowspan="2" style="vertical-align: middle;"></td>
-    <td rowspan="2" style="vertical-align: middle;">
+    <td>Capacitor</td>
+    <td>0402</td>
+    <td>4.7µF</td>
+    <td"></td>
+    <td>
       <a href="https://forums.raspberrypi.com/viewtopic.php?p=2284048#p2284090">Raspberry Pi Forum<a>
     </td>
-    <td rowspan="2" style="vertical-align: middle;">Near the PWR silkscreen</td>
+    <td>Near the PWR silkscreen</td>
   </tr>
   <tr>
-    <td>C3</td>
+    <td>66</td>
+    <td></td>
+    <td>Capacitor</td>
+    <td>0402</td>
+    <td>4.7µF</td>
+    <td"></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2284048#p2284090">Raspberry Pi Forum<a>
+    </td>
+    <td>Near the PWR silkscreen</td>
   </tr>
 
+  <tr>
+    <td>71</td>
+    <td></td>
+    <td>Inductor</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2364163&hilit=PI+5+Component#p2364162">Raspberry Pi Forum</a>
+    </td>
+    <td>
+      Inductor, SMT, 2012, 470n, IRMS=4A, ISAT=4.6A, DCR(max)=35mR
+      <br />
+      Near PMIC
+    </td>
+  </tr>
+
+  <tr>
+    <td>143</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    
 </table>
 
 ## Bottom
-![PI 5 Bottom Components](/pi5/images/pi5_components_bottom.png)
+![PI 5 Bottom Components](/pi5/images/pi5_components_bottom_v2.png)
 
 <table>
   <tr>
-    <th>Label</th>
+    <th>ID</th>
+    <th>Official Label</th>
     <th>Type</th>
     <th>Package</th>
     <th>Value</th>
@@ -413,6 +453,7 @@
   </tr>
 
   <tr>
+    <td>1</td>
     <td>J9</td>
     <td></td>
     <td></td>
@@ -425,17 +466,8 @@
   </tr>
 
   <tr>
+    <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>U12</td>
     <td>N-Channel Mosfet</td>
     <td></td>
     <td></td>
@@ -447,17 +479,8 @@
   </tr>
 
   <tr>
+    <td>285</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>C1</td>
     <td>Capacitor</td>
     <td>0201</td>
     <td>1uF</td>
@@ -475,7 +498,8 @@
   </tr>
 
   <tr>
-    <td>C4</td>
+    <td>123</td>
+    <td></td>
     <td>Capacitor</td>
     <td>0603</td>
     <td>22uF</td>
@@ -492,6 +516,7 @@
   </tr>
 
   <tr>
+    <td>72</td>
     <td>C234</td>
     <td>Capacitor</td>
     <td>0603</td>
@@ -509,6 +534,7 @@
     </td>
   </tr>
   <tr>
+    <td>116</td>
     <td>C263</td>
     <td>Capacitor</td>
     <td>0402</td>
@@ -525,43 +551,45 @@
   </tr>
 
   <tr>
+    <td>301</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>R1</td>
     <td>Resistor</td>
     <td>0201</td>
     <td>1K Ω</td>
     <td></td>
-    <td rowspan="3" style="vertical-align: middle;">
+    <td>
       <a href="https://forums.raspberrypi.com/viewtopic.php?p=2284048#p2284090">Raspberry Pi Forum</a>
     </td>
     <td rowspan="3" style="vertical-align: middle;">Midway between SD Slot and U12</td>
   </tr>
   <tr>
-    <td>R2</td>
-    <td>Resistor</td>
-    <td>0201</td>
-    <td>10K Ω</td>
+    <td>302</td>
     <td></td>
-  </tr>
-  <tr>
-    <td>R3</td>
     <td>Resistor</td>
     <td>0201</td>
     <td>1K Ω</td>
     <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2284048#p2284090">Raspberry Pi Forum</a>
+    </td>
+    <td rowspan="3" style="vertical-align: middle;">Midway between SD Slot and U12</td>
+  </tr>
+  <tr>
+    <td>303</td>
+    <td></td>
+    <td>Resistor</td>
+    <td>0201</td>
+    <td>1K Ω</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2284048#p2284090">Raspberry Pi Forum</a>
+    </td>
+    <td rowspan="3" style="vertical-align: middle;">Midway between SD Slot and U12</td>
   </tr>
 
   <tr>
-    <td>R4</td>
+    <td>304</td>
+    <td></td>
     <td>Resistor</td>
     <td>0201</td>
     <td>18K Ω</td>
@@ -573,6 +601,7 @@
   </tr>
 
   <tr>
+    <td>69</td>
     <td>R15</td>
     <td></td>
     <td>0201</td>
@@ -585,6 +614,7 @@
   </tr>
 
   <tr>
+    <td>68</td>
     <td>R17</td>
     <td></td>
     <td>0201</td>
@@ -597,6 +627,7 @@
   </tr>
 
   <tr>
+    <td>66</td>
     <td>R46</td>
     <td></td>
     <td>0201</td>
@@ -609,6 +640,7 @@
   </tr>
 
   <tr>
+    <td>67</td>
     <td>R47</td>
     <td></td>
     <td>0201</td>
@@ -621,6 +653,7 @@
   </tr>
 
   <tr>
+    <td>118</td>
     <td>R93</td>
     <td></td>
     <td>0201</td>
@@ -633,17 +666,8 @@
   </tr>
 
   <tr>
+    <td>17</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>FB1</td>
     <td>Ferrite Bead</td>
     <td>0402</td>
     <td>220 Ω</td>
@@ -659,17 +683,8 @@
   </tr>
 
   <tr>
+    <td>305</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>Q1</td>
     <td>Mosfet</td>
     <td></td>
     <td></td>
@@ -684,5 +699,14 @@
     </td>
   </tr>
 
-
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
 </table>
