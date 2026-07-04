@@ -479,151 +479,20 @@
   </tr>
 
   <tr>
-    <td>285</td>
+    <td>17</td>
     <td></td>
-    <td>Capacitor</td>
-    <td>0201</td>
-    <td>1uF</td>
-    <td>
-      <a href="https://www.digikey.com/short/q9bq50vc">DigiKey</a>
-    </td>
-    <td>
-      <a href="https://forums.raspberrypi.com/viewtopic.php?t=399050#p2379907">Raspberry Pi Forum</a>
-    </td>
-    <td>
-      Murata Electronics GRM033R60J105ME11D <br />
-      Located between TP37 & TP8 <br /><br />
-      Used to stabilise the Real Time Clock battery rail.
-    </td>
-  </tr>
-
-  <tr>
-    <td>123</td>
-    <td></td>
-    <td>Capacitor</td>
-    <td>0603</td>
-    <td>22uF</td>
-    <td></td>
-    <td>
-      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2356885&hilit=PI+5+Component#p2356889">Raspberry Pi Forum</a>
-    </td>
-    <td>
-      ceramic capacitor.
-      22uF, 6.3V, X5R, 20%, 0603.
-      <br />
-      Near TP34
-    </td>
-  </tr>
-
-  <tr>
-    <td>72</td>
-    <td>C234</td>
-    <td>Capacitor</td>
-    <td>0603</td>
-    <td>22uF</td>
-    <td>
-      <a href="https://www.digikey.co.uk/short/5hfh7zcf">DigiKey</a>
-    </td>
-    <td>
-      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2365706&hilit=PI+5+Component#p2352563">Raspberry Pi Forum</a>
-    </td>
-    <td>
-       22uF 6V3 X5R 10%
-       <br />
-       Just north of TP26
-    </td>
-  </tr>
-  <tr>
-    <td>116</td>
-    <td>C263</td>
-    <td>Capacitor</td>
+    <td>Ferrite Bead</td>
     <td>0402</td>
-    <td>4u7</td>
+    <td>220 Ω</td>
     <td></td>
     <td>
-      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2365706&hilit=PI+5+Component#p2352563">Raspberry Pi Forum</a>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=378124#p2261274">Raspberry Pi Forum</a>
     </td>
     <td>
-       4u7 6V3 X5R 20% 0402
-       <br />
-       Near TP46
+      Murata BLM15PX221SN1D 220 Ohms @ 100 MHz 1 Power Line Ferrite Bead 0402 (1005 Metric) 1.4A 100mOhm
+      <br />
+      Near TP65
     </td>
-  </tr>
-
-  <tr>
-    <td>301</td>
-    <td></td>
-    <td>Resistor</td>
-    <td>0201</td>
-    <td>1K Ω</td>
-    <td></td>
-    <td>
-      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2284048#p2284090">Raspberry Pi Forum</a>
-    </td>
-    <td rowspan="3" style="vertical-align: middle;">Midway between SD Slot and U12</td>
-  </tr>
-  <tr>
-    <td>302</td>
-    <td></td>
-    <td>Resistor</td>
-    <td>0201</td>
-    <td>1K Ω</td>
-    <td></td>
-    <td>
-      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2284048#p2284090">Raspberry Pi Forum</a>
-    </td>
-    <td rowspan="3" style="vertical-align: middle;">Midway between SD Slot and U12</td>
-  </tr>
-  <tr>
-    <td>303</td>
-    <td></td>
-    <td>Resistor</td>
-    <td>0201</td>
-    <td>1K Ω</td>
-    <td></td>
-    <td>
-      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2284048#p2284090">Raspberry Pi Forum</a>
-    </td>
-    <td rowspan="3" style="vertical-align: middle;">Midway between SD Slot and U12</td>
-  </tr>
-
-  <tr>
-    <td>304</td>
-    <td></td>
-    <td>Resistor</td>
-    <td>0201</td>
-    <td>18K Ω</td>
-    <td></td>
-    <td>
-      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2259191#p2260470">Raspberry Pi Forum</a>
-    </td>
-    <td>Near TP2</td>
-  </tr>
-
-  <tr>
-    <td>69</td>
-    <td>R15</td>
-    <td></td>
-    <td>0201</td>
-    <td>470 Ω</td>
-    <td></td>
-    <td>
-      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2365706&hilit=PI+5+Component#p2352563">Raspberry Pi Forum</a>
-    </td>
-    <td>Near TP64</td>
-  </tr>
-
-  <tr>
-    <td>68</td>
-    <td>R17</td>
-    <td></td>
-    <td>0201</td>
-    <td>470 Ω</td>
-    <td></td>
-    <td>
-      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2365706&hilit=PI+5+Component#p2352563">Raspberry Pi Forum</a>
-    </td>
-    <td>Near TP64</td>
   </tr>
 
   <tr>
@@ -653,6 +522,69 @@
   </tr>
 
   <tr>
+    <td>68</td>
+    <td>R17</td>
+    <td></td>
+    <td>0201</td>
+    <td>470 Ω</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2365706&hilit=PI+5+Component#p2352563">Raspberry Pi Forum</a>
+    </td>
+    <td>Near TP64</td>
+  </tr>
+
+  <tr>
+    <td>69</td>
+    <td>R15</td>
+    <td></td>
+    <td>0201</td>
+    <td>470 Ω</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2365706&hilit=PI+5+Component#p2352563">Raspberry Pi Forum</a>
+    </td>
+    <td>Near TP64</td>
+  </tr>
+
+  <tr>
+    <td>72</td>
+    <td>C234</td>
+    <td>Capacitor</td>
+    <td>0603</td>
+    <td>22uF</td>
+    <td>
+      <a href="https://www.digikey.co.uk/short/5hfh7zcf">DigiKey</a>
+    </td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2365706&hilit=PI+5+Component#p2352563">Raspberry Pi Forum</a>
+    </td>
+    <td>
+       22uF 6V3 X5R 10%
+       <br />
+       Just north of TP26
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>116</td>
+    <td>C263</td>
+    <td>Capacitor</td>
+    <td>0402</td>
+    <td>4u7</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2365706&hilit=PI+5+Component#p2352563">Raspberry Pi Forum</a>
+    </td>
+    <td>
+       4u7 6V3 X5R 20% 0402
+       <br />
+       Near TP46
+    </td>
+  </tr>
+
+  <tr>
     <td>118</td>
     <td>R93</td>
     <td></td>
@@ -666,20 +598,91 @@
   </tr>
 
   <tr>
-    <td>17</td>
+    <td>123</td>
     <td></td>
-    <td>Ferrite Bead</td>
-    <td>0402</td>
-    <td>220 Ω</td>
+    <td>Capacitor</td>
+    <td>0603</td>
+    <td>22uF</td>
     <td></td>
     <td>
-      <a href="https://forums.raspberrypi.com/viewtopic.php?t=378124#p2261274">Raspberry Pi Forum</a>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2356885&hilit=PI+5+Component#p2356889">Raspberry Pi Forum</a>
     </td>
     <td>
-      Murata BLM15PX221SN1D 220 Ohms @ 100 MHz 1 Power Line Ferrite Bead 0402 (1005 Metric) 1.4A 100mOhm
+      ceramic capacitor.
+      22uF, 6.3V, X5R, 20%, 0603.
       <br />
-      Near TP65
+      Near TP34
     </td>
+  </tr>
+
+  <tr>
+    <td>285</td>
+    <td></td>
+    <td>Capacitor</td>
+    <td>0201</td>
+    <td>1uF</td>
+    <td>
+      <a href="https://www.digikey.com/short/q9bq50vc">DigiKey</a>
+    </td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=399050#p2379907">Raspberry Pi Forum</a>
+    </td>
+    <td>
+      Murata Electronics GRM033R60J105ME11D <br />
+      Located between TP37 & TP8 <br /><br />
+      Used to stabilise the Real Time Clock battery rail.
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>301</td>
+    <td></td>
+    <td>Resistor</td>
+    <td>0201</td>
+    <td>1K Ω</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2284048#p2284090">Raspberry Pi Forum</a>
+    </td>
+    <td>Midway between SD Slot and U12</td>
+  </tr>
+  <tr>
+    <td>302</td>
+    <td></td>
+    <td>Resistor</td>
+    <td>0201</td>
+    <td>1K Ω</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2284048#p2284090">Raspberry Pi Forum</a>
+    </td>
+    <td>Midway between SD Slot and U12</td>
+  </tr>
+  <tr>
+    <td>303</td>
+    <td></td>
+    <td>Resistor</td>
+    <td>0201</td>
+    <td>1K Ω</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2284048#p2284090">Raspberry Pi Forum</a>
+    </td>
+    <td>Midway between SD Slot and U12</td>
+  </tr>
+
+  <tr>
+    <td>304</td>
+    <td></td>
+    <td>Resistor</td>
+    <td>0201</td>
+    <td>18K Ω</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2259191#p2260470">Raspberry Pi Forum</a>
+    </td>
+    <td>Near TP2</td>
   </tr>
 
   <tr>
