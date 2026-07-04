@@ -496,9 +496,22 @@
   </tr>
 
   <tr>
+    <td>34</td>
+    <td></td>
+    <td>Capacitor</td>
+    <td>0201</td>
+    <td></td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?p=2381538#p2381538">Raspberry Pi Forum</a>
+    </td>
+    <td>MLCC, 100n, 0201 (M0603), 6.3V, 10%, X5R</td>
+  </tr>
+
+  <tr>
     <td>66</td>
     <td>R46</td>
-    <td></td>
+    <td>Resistor</td>
     <td>0201</td>
     <td>2K Ω</td>
     <td></td>
@@ -511,7 +524,7 @@
   <tr>
     <td>67</td>
     <td>R47</td>
-    <td></td>
+    <td>Resistor</td>
     <td>0201</td>
     <td>2K Ω</td>
     <td></td>
@@ -524,7 +537,7 @@
   <tr>
     <td>68</td>
     <td>R17</td>
-    <td></td>
+    <td>Resistor</td>
     <td>0201</td>
     <td>470 Ω</td>
     <td></td>
@@ -537,7 +550,7 @@
   <tr>
     <td>69</td>
     <td>R15</td>
-    <td></td>
+    <td>Resistor</td>
     <td>0201</td>
     <td>470 Ω</td>
     <td></td>
