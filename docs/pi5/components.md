@@ -665,24 +665,36 @@
     <td></td>
     <td>Resistor</td>
     <td>0201</td>
-    <td>1K Ω</td>
+    <td>10K Ω</td>
     <td></td>
     <td>
       <a href="https://forums.raspberrypi.com/viewtopic.php?p=2284048#p2284090">Raspberry Pi Forum</a>
+      <br />
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=399345#p2382002">Raspberry Pi Forum</a>
     </td>
-    <td>Midway between SD Slot and U12</td>
+    <td>
+      Power button will not respond with this missing.
+      <br />
+      Midway between SD Slot and U12
+    </td>
   </tr>
   <tr>
     <td>303</td>
     <td></td>
     <td>Resistor</td>
     <td>0201</td>
-    <td>1K Ω</td>
+    <td>2K Ω</td>
     <td></td>
     <td>
       <a href="https://forums.raspberrypi.com/viewtopic.php?p=2284048#p2284090">Raspberry Pi Forum</a>
+      <br />
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=399345#p2382002">Raspberry Pi Forum</a>
     </td>
-    <td>Midway between SD Slot and U12</td>
+    <td>
+       If the red part of the status led works then this component is okay.
+      <br />
+      Midway between SD Slot and U12
+    </td>
   </tr>
 
   <tr>
