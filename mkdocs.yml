@@ -134,4 +134,6 @@ nav:
   - Disclosure: disclosure.md
   - Contributing: contributing.md
   - Help:
+    - help/index.md
     - Raspberry Pi Forums: https://forums.raspberrypi.com/viewforum.php?f=28
+    - Report an Issue: https://github.com/dpetzel/rpi-site/issues
