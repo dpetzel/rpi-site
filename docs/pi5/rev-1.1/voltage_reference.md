@@ -19,7 +19,11 @@ attached except power. No Display, no SD Card, nothing...
       <img src="https://placehold.co/15x15/1a1a1a/1a1a1a.png" alt="#1a1a1a"> Ground <br />
       <img src="https://placehold.co/15x15/e63226/e63226.png" alt="#e63226"> 5v <br />
       <img src="https://placehold.co/15x15/f5a623/f5a623.png" alt="#f5a623"> 3.3v <br />
+      f5f527
       <img src="https://placehold.co/15x15/4a90d9/4a90d9.png" alt="#4a90d9"> 1.8v <br />
+      <img src="https://placehold.co/15x15/f527ec/f527ec.png" alt="#f527ec"> 0.8v <br />
+      <img src="https://placehold.co/15x15/fffffc/.png" alt="#fffffc"> Other <br />
+      
 
       
     </td>
