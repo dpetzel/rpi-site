@@ -22,6 +22,7 @@ Board-level repair reference for the Raspberry Pi 3 Model B, PCB revision 1.2.
 
 ## Sections
 - [Test Points](test-points.md) - Test point map and expected readings
+- [Voltage Reference](voltage_reference.md) - Voltage maps for bare board
 
 ---
 

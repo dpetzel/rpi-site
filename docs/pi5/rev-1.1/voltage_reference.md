@@ -3,7 +3,7 @@
 
 ## Power Only
 
-The following readings have been taken from a PI 3 B+ with nothing
+The following readings have been taken from a Pi 5 (Rev 1.1) with nothing
 attached except power. No Display, no SD Card, nothing...
 
 ### Top

@@ -56,6 +56,7 @@ nav:
       - Rev 1.1:
         - Overview: pi5/rev-1.1/index.md
         - Test Points: pi5/rev-1.1/test-points.md
+        - Voltage Reference: pi5/rev-1.1/voltage_reference.md
       - Rev 1.0:
         - Overview: pi5/rev-1.0/index.md
         - Test Points: pi5/rev-1.0/test-points.md
