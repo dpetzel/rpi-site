@@ -21,7 +21,7 @@ attached except power. No Display, no SD Card, nothing...
       <img src="https://placehold.co/15x15/FFFFFC/FFFFFC.png" alt="#FFFFFC"> Other <br />
       
     </td>
-    <td><img src="../images/pi3-bplus-voltages-top.png" alt="Top Voltages"></td>
-    <td><img src="../images/pi3-bplus-voltages-bottom.png" alt="Bottom Voltages"></td>
+    <td><img src="images/pi3-bplus-voltages-top.png" alt="Top Voltages"></td>
+    <td><img src="images/pi3-bplus-voltages-bottom.png" alt="Bottom Voltages"></td>
   </tr>
 </table>
