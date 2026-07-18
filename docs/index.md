@@ -21,7 +21,9 @@ This site organizes repair-relevant data by Pi model and variant:
 | Family | Variants |
 |--------|----------|
 | Pi 5   | Rev 1.0, Rev 1.1 |
+| Pi 500 | Rev 1.0 |
 | Pi 4   | Model B |
+| Pi 400 | Rev 1.0 |
 | Pi 3   | 3B, 3B+, 3A+ |
 | Pi 2   | Model B |
 | Pi Zero | Zero, Zero W, Zero 2 W |
