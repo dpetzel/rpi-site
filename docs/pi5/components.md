@@ -425,6 +425,32 @@
   </tr>
 
   <tr>
+    <td>103</td>
+    <td></td>
+    <td>Capacitor</td>
+    <td>0201</td>
+    <td>100nF</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=399671#p2383181">Raspberry Pi Forum</a>
+    </td>
+    <td>100n 6.3V 10% X5R 0201</td>
+  </tr>
+
+  <tr>
+    <td>104</td>
+    <td></td>
+    <td>Capacitor</td>
+    <td>0201</td>
+    <td>100nF</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=399671#p2383181">Raspberry Pi Forum</a>
+    </td>
+    <td>100n 6.3V 10% X5R 0201</td>
+  </tr>
+
+  <tr>
     <td>143</td>
     <td></td>
     <td></td>
