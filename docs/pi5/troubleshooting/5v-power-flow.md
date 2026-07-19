@@ -32,23 +32,23 @@ flowchart LR
 <table style="border-collapse: collapse; text-align: center; font-family: monospace;">
   <tr>
     <td style="border: none; padding: 8px; vertical-align: middle;" rowspan="3">5V Out ➡</td>
-    <td style="border: 1px solid #666; padding: 8px; background: #d4edda;">Pin 1 (Source)</td>
+    <td style="border: 1px solid #666; padding: 8px; background: #d4edda; color: #1a1a1a;">Pin 1 (Source)</td>
     <td style="padding: 0 20px;" rowspan="4"></td>
-    <td style="border: 1px solid #666; padding: 8px; background: #fff3cd;">Pin 8 (Drain)</td>
+    <td style="border: 1px solid #666; padding: 8px; background: #fff3cd; color: #1a1a1a;">Pin 8 (Drain)</td>
     <td style="border: none; padding: 8px; vertical-align: middle;" rowspan="4">⬅ USB-C (5V In)</td>
   </tr>
   <tr>
-    <td style="border: 1px solid #666; padding: 8px; background: #d4edda;">Pin 2 (Source)</td>
-    <td style="border: 1px solid #666; padding: 8px; background: #fff3cd;">Pin 7 (Drain)</td>
+    <td style="border: 1px solid #666; padding: 8px; background: #d4edda; color: #1a1a1a;">Pin 2 (Source)</td>
+    <td style="border: 1px solid #666; padding: 8px; background: #fff3cd; color: #1a1a1a;">Pin 7 (Drain)</td>
   </tr>
   <tr>
-    <td style="border: 1px solid #666; padding: 8px; background: #d4edda;">Pin 3 (Source)</td>
-    <td style="border: 1px solid #666; padding: 8px; background: #fff3cd;">Pin 6 (Drain)</td>
+    <td style="border: 1px solid #666; padding: 8px; background: #d4edda; color: #1a1a1a;">Pin 3 (Source)</td>
+    <td style="border: 1px solid #666; padding: 8px; background: #fff3cd; color: #1a1a1a;">Pin 6 (Drain)</td>
   </tr>
   <tr>
     <td style="border: none; padding: 8px;">⬅ Via (Unknown) — 9.72V</td>
-    <td style="border: 1px solid #666; padding: 8px; background: #cce5ff;">Pin 4 (Gate)</td>
-    <td style="border: 1px solid #666; padding: 8px; background: #fff3cd;">Pin 5 (Drain)</td>
+    <td style="border: 1px solid #666; padding: 8px; background: #cce5ff; color: #1a1a1a;">Pin 4 (Gate)</td>
+    <td style="border: 1px solid #666; padding: 8px; background: #fff3cd; color: #1a1a1a;">Pin 5 (Drain)</td>
   </tr>
 </table>
 
