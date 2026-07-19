@@ -40,7 +40,11 @@ markdown_extensions:
   - tables
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - attr_list
   - md_in_html
   - toc:
@@ -62,6 +66,8 @@ nav:
         - Test Points: pi5/rev-1.0/test-points.md
       - Components:  pi5/components.md
       - PMIC: pi5/pmic/index.md
+      - Troubleshooting:
+        - 5V Power Flow: pi5/troubleshooting/5v-power-flow.md
     - Pi 500:
       - Overview: pi500/index.md
       - Rev 1.0:
