@@ -73,6 +73,7 @@ nav:
       - Rev 1.0:
         - Overview: pi500/rev-1.0/index.md
         - Test Points: pi500/rev-1.0/test-points.md
+        - Components: pi500/rev-1.0/components.md
     - Pi 4:
       - Overview: pi4/index.md
       - Model B:
