@@ -505,6 +505,25 @@
   </tr>
 
   <tr>
+    <td>11</td>
+    <td></td>
+    <td>N-Channel Mosfet</td>
+    <td>DFN1006B-3</td>
+    <td>20V</td>
+    <td>
+      <a href="https://www.nexperia.com/product/PMZB600UNEL">Nexperia</a>
+    </td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=399702">Raspberry Pi Forum</a>
+    </td>
+    <td>
+      PMZB600UNEL - Used for fan PWM speed control.
+      <br />
+      Board can still be used without this if not using the fan, provided remaining solder is not shorting the pads.
+    </td>
+  </tr>
+
+  <tr>
     <td>17</td>
     <td></td>
     <td>Ferrite Bead</td>
