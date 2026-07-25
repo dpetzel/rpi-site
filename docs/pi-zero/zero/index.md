@@ -6,7 +6,7 @@ Board-level repair reference for the Raspberry Pi Zero.
 
 ## Revisions
 
-| Revision | Key Changes | Status |
-|----------|-------------|--------|
-| [Rev 1.3](rev-1.3/index.md) | Added camera connector (CSI) | TODO |
-| [Rev 1.2](rev-1.2/index.md) | Initial release | TODO |
+| Revision | Key Changes  |
+|----------|-------------|
+| [Rev 1.3](rev-1.3/index.md) | Added camera connector (CSI)  |
+| [Rev 1.2](rev-1.2/index.md) | Initial release  |

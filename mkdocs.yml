@@ -147,6 +147,7 @@ nav:
           - Test Points: pi-zero/zero/rev-1.2/test-points.md
   - Guides:
     - Updating EEProm: guides/update_eeprom.md
+    - Board Identification: guides/board-identification.md
   - About: about.md
   - Disclaimer: disclaimer.md
   - Disclosure: disclosure.md

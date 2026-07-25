@@ -12,8 +12,16 @@ The Pi 500 is a keyboard-integrated computer based on the BCM2712 SoC (same as P
 ### Bottom
 ![Pi 500 PCB Bottom](rev-1.0/images/pi500_bottom.jpg)
 
+## Revision Identification
+
+If the board boots, the most reliable way to identify the revision is via software. See the [Board Identification guide](../guides/board-identification.md).
+
+For non-booting boards, the following physical attributes can help narrow down the revision:
+
+<!-- TODO: Add distinguishing physical attributes between revisions -->
+
 ## Revisions
 
-| Revision | Key Changes | Status |
-|----------|-------------|--------|
-| [Rev 1.0](rev-1.0/index.md) | Initial release | TODO |
+| Revision | Key Changes  |
+|----------|-------------|
+| [Rev 1.0](rev-1.0/index.md) | Initial release  |

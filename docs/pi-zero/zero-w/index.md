@@ -6,6 +6,6 @@ Board-level repair reference for the Raspberry Pi Zero W.
 
 ## Revisions
 
-| Revision | Key Changes | Status |
-|----------|-------------|--------|
-| [Rev 1.1](rev-1.1/index.md) | Initial release | TODO |
+| Revision | Key Changes  |
+|----------|-------------|
+| [Rev 1.1](rev-1.1/index.md) | Initial release  |
