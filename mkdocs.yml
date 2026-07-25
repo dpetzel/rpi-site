@@ -91,6 +91,10 @@ nav:
         - Rev 1.1:
           - Overview: pi4/model-b/rev-1.1/index.md
           - Test Points: pi4/model-b/rev-1.1/test-points.md
+      - PMIC:
+        - Overview: pi4/pmic/index.md
+        - MxL7704: pi4/pmic/mxl7704.md
+        - DA9090: pi4/pmic/da9090.md
     - Pi 400:
       - Overview: pi400/index.md
       - Rev 1.0:
