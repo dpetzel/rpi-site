@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-# RPi Repair Reference
+# Raspberry Pi Repair Reference
 
 A board-level repair reference for Raspberry Pi hardware. Component inventories, voltage maps, test points, and documented failure modes.
 
