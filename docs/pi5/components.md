@@ -626,6 +626,19 @@
 
   
   <tr>
+    <td>99</td>
+    <td></td>
+    <td>Capacitor</td>
+    <td>0402</td>
+    <td>22µF</td>
+    <td>
+      <a href="https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL05A226MQ5N6J8/7320595">DigiKey</a>
+    </td>
+    <td>Off board measurement (reference board)</td>
+    <td>22µF ±20% 6.3V X5R 0402</td>
+  </tr>
+
+  <tr>
     <td>116</td>
     <td>C263</td>
     <td>Capacitor</td>
