@@ -630,12 +630,14 @@
     <td></td>
     <td>Capacitor</td>
     <td>0402</td>
-    <td>22µF</td>
+    <td>15µF</td>
     <td>
-      <a href="https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL05A226MQ5N6J8/7320595">DigiKey</a>
+      <a href="https://www.digikey.com/en/products/detail/kyocera-avx/04026D156MAT2A/5964918">DigiKey</a>
     </td>
-    <td>Off board measurement (reference board)</td>
-    <td>22µF ±20% 6.3V X5R 0402</td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=399917#p2384639">Raspberry Pi Forum</a>
+    </td>
+    <td>15µF ±20% 6.3V X5R 0402</td>
   </tr>
 
   <tr>
