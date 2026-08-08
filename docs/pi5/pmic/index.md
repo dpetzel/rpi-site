@@ -412,3 +412,58 @@ enters the PMIC
     <td></td>
   </tr>
 </table>
+
+## DA9091 Functional Reference
+
+### External Reference
+
+The [CM5 reverse engineering project](https://github.com/schlae/cm5-reveng) by Tube Time provides detailed pin-level documentation of the DA9091 PMIC. The Compute Module 5 uses the **identical DA9091** in the same QFN-71 (6×6mm, 0.4mm pitch) package, making this an invaluable cross-reference for Pi 5 repair work.
+
+!!! note "Applicability"
+    The following pin assignments are derived from the [CM5 reverse engineering project](https://github.com/schlae/cm5-reveng) which uses the identical DA9091 PMIC. While pin functions are confirmed shared, the specific external circuitry (capacitor values, inductor values, PCB routing) may differ between CM5 and Pi 5.
+
+### Pin Function Summary (from CM5 reverse engineering)
+
+| Parameter | Value |
+|-----------|-------|
+| Package | QFN-71, 6×6mm, 0.4mm pitch |
+| I2C Address | 0x38 |
+
+| Pin(s) | Function | Description |
+|--------|----------|-------------|
+| 7, 9 | +5V | Main power input |
+| 8 | VREG_INT | Internal regulator output |
+| 10 | VREF | 3.3V reference output (VREF_3V3) |
+| 11 | PWR_BUT | Power button input |
+| 21 | HOTSWAP_DRAIN | Senses drain of DMG7430LFG |
+| 22 | HOTSWAP_GATE | Drives gate of DMG7430LFG |
+| 24 | VLOGIC | Logic supply |
+| 43 | CC2 | USB-C CC2 line |
+| 44 | CC1 | USB-C CC1 line |
+| 47 | VBAT | RTC battery input |
+| 50 | SCL | I2C clock |
+| 51 | SDA | I2C data |
+| 52, 53 | OSC | 32 KHz crystal oscillator |
+| 56 | INT | Open-collector interrupt output |
+| 62 | RUN | Power good / status output |
+| 63 | EN_LOAD_SW | Enables secondary 3.3V and 1.8V rails |
+| 65 | PMIC_EN | PMIC enable input |
+
+!!! info "Hot-swap function"
+    The hot-swap function is built into the DA9091 — it directly controls the DMG7430LFG MOSFET gate (pin 22) while sensing the drain (pin 21), providing approximately 400 µs inrush current ramp-up time. This is not an external hot-swap controller; it is integrated into the PMIC silicon.
+
+### Power Rail Output Assignments
+
+| Converter | LX Pin | Output Pin | Rail | Voltage | Notes |
+|-----------|--------|------------|------|---------|-------|
+| Buck 1 | 2 | OUT1 (49) | VDD_3V7_WIFI | 3.7 V | WiFi module supply |
+| Buck 2 | 5 | OUT2 (55) | 3.3V main | 3.3 V | Primary 3.3 V rail |
+| Buck 3 | 13 | OUT3 (61) | 1.8V main | 1.8 V | Primary 1.8 V rail |
+| Buck 4 | 16 | OUT4 (71) | VDD_0V6 | 0.6 V | LPDDR4 VDDQ |
+| Buck 5 | 19 | OUT5 (64) | VDD_1V1 | 1.1 V | LPDDR4 VDD2 |
+| Buck 6 | 28 | OUT6 (60) | VDD_1V1_RP1 | 1.1 V | RP1 southbridge |
+| Buck 7 | 31 | OUT7 (54) | VDD_0V8_BCM | 0.8 V | BCM2712 auxiliary |
+| VCx (4-phase) | 34, 36, 39, 41 | VC_OUT (45) | VDD_BCM_CORE | ~0.8 V (variable) | BCM2712 core, DVFS-controlled |
+| LDO | — | 25 | VDD_HDMI | — | HDMI supply |
+| LDO | — | 23 | Unknown | — | — |
+| VREF | — | 10 | VREF_3V3 | 3.3 V | Reference voltage |

@@ -141,6 +141,8 @@
     </td>
     <td></td>
     <td>
+        DA9091 — QFN-71, 6x6mm, 0.4mm pitch. I2C address 0x38. Built-in hot-swap controller for DMG7430LFG MOSFET.
+        <br />
         <a href="/pi5/pmic">More Info</a>
     </td>
   </tr>
@@ -500,8 +502,14 @@
     <td>
       <a href="https://www.digikey.com/short/9dd52j4n">DigiKey</a>
     </td>
-    <td></td>
-    <td>DMG7430LFG-7</td>
+    <td>
+      <a href="https://github.com/schlae/cm5-reveng">CM5 Reverse Engineering</a>
+    </td>
+    <td>
+      DMG7430LFG-7
+      <br />
+      Hot-swap / inrush current limiting MOSFET. Gate driven by DA9091 PMIC pin 22. Drain sensed by PMIC pin 21. ~400µs ramp-up time.
+    </td>
   </tr>
 
   <tr>
