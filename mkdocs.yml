@@ -88,9 +88,11 @@ nav:
           - Test Points: pi4/model-b/rev-1.4/test-points.md
         - Rev 1.2:
           - Overview: pi4/model-b/rev-1.2/index.md
+          - Components: pi4/model-b/rev-1.2/components.md
           - Test Points: pi4/model-b/rev-1.2/test-points.md
         - Rev 1.1:
           - Overview: pi4/model-b/rev-1.1/index.md
+          - Components: pi4/model-b/rev-1.1/components.md
           - Test Points: pi4/model-b/rev-1.1/test-points.md
       - PMIC:
         - Overview: pi4/pmic/index.md
