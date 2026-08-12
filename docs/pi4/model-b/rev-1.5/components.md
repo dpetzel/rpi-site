@@ -1,3 +1,5 @@
+<!-- TODO: Check if applicable https://forums.raspberrypi.com/viewtopic.php?t=343096 -->
+
 # Pi 4 B Rev 1.5 Components
 
 

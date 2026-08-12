@@ -1,3 +1,6 @@
+<!-- TODO: Fill in component details from https://forums.raspberrypi.com/viewtopic.php?t=400091 -->
+<!-- TODO: Check if applicable https://forums.raspberrypi.com/viewtopic.php?t=343096 -->
+
 # Pi 4 B Rev 1.2 Components
 
 
