@@ -3,7 +3,7 @@
 
 ## Top
 
-![Board Image Top](images/pi4_b_1.1_components_top.jpg)
+![Board Image Top](images/pi4_b_1.1_components_top.png)
 
 <table>
   <tr>
@@ -20,7 +20,7 @@
 
 ## Bottom
 
-![Board Image Bottom](images/pi4_b_1.1_components_bottom.jpg)
+![Board Image Bottom](images/pi4_b_1.1_components_bottom.png)
 
 <table>
   <tr>

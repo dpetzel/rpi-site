@@ -2,7 +2,7 @@
 
 
 ## Top
-![Board Image Top](images/pi4_b_1.5_components_top.jpg)
+![Board Image Top](images/pi4_b_1.5_components_top.png)
 
 <table>
   <tr>
