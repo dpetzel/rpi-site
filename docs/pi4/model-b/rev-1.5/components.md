@@ -18,6 +18,20 @@
     <th>Notes</th>
   </tr>
   <tr>
+    <td>11</td>
+    <td></td>
+    <td>TVS Diode</td>
+    <td>SMB</td>
+    <td>5VWM 9.2VC, Unidirectional, 5W cont. 600W pk</td>
+    <td>
+      <a href="https://www.digikey.com/en/products/detail/littelfuse-inc/smbj5-0a/285950">DigiKey</a>
+    </td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=400087#p2385305">Raspberry Pi Forum</a>
+    </td>
+    <td>Littelfuse SMBJ5.0A</td>
+  </tr>
+  <tr>
     <td>61</td>
     <td></td>
     <td>Capacitor</td>
@@ -26,6 +40,20 @@
     <td></td>
     <td>Self-Measured using LCR Meter</td>
     <td></td>
+  </tr>
+  <tr>
+    <td>84</td>
+    <td></td>
+    <td>IC Power Switch P-Channel 1:1</td>
+    <td>SOT-26</td>
+    <td></td>
+    <td>
+      <a href="https://www.digikey.com/en/products/detail/diodes-incorporated/ap2552w6-7/3882052">DigiKey</a>
+    </td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=400087#p2385305">Raspberry Pi Forum</a>
+    </td>
+    <td>Diodes Incorporated AP2552W6-7</td>
   </tr>
 </table>
 
