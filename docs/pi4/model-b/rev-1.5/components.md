@@ -22,7 +22,7 @@
     <td></td>
     <td>44.2µF</td>
     <td></td>
-    <td></td>
+    <td>Self-Measured using LCR Meter</td>
     <td></td>
   </tr>
 </table>
