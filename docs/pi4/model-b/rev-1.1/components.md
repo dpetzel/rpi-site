@@ -18,6 +18,16 @@
     <th>Source(s)</th>
     <th>Notes</th>
   </tr>
+  <tr>
+    <td>48</td>
+    <td></td>
+    <td>Resistor (Series)</td>
+    <td></td>
+    <td>33–34Ω</td>
+    <td></td>
+    <td>Self-Measured</td>
+    <td>SD card CLK series resistor. Upper-left of SOC. Left pad measures ~0.8Ω to SD card slot CLK pin; right pad measures ~34Ω across component.</td>
+  </tr>
 </table>
 
 ## Bottom

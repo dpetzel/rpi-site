@@ -33,6 +33,16 @@
     <td>Littelfuse SMBJ5.0A</td>
   </tr>
   <tr>
+    <td>48</td>
+    <td></td>
+    <td>Resistor (Series)</td>
+    <td></td>
+    <td>33–34Ω</td>
+    <td></td>
+    <td>Self-Measured</td>
+    <td>SD card CLK series resistor. Upper-left of SOC. Left pad measures ~0.8Ω to SD card slot CLK pin; right pad measures ~34Ω across component.</td>
+  </tr>
+  <tr>
     <td>61</td>
     <td></td>
     <td>Capacitor</td>
