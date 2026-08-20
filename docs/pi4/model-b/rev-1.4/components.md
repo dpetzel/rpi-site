@@ -87,6 +87,21 @@
   </tr>
 
   <tr>
+    <td>1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <a href="https://www.digikey.co.uk/en/products/detail/molex/1040310811/2804769">DigiKey</a>
+    </td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=338575#p2027655">Raspberry Pi Forum</a>
+    </td>
+    <td>SD Card Slot</td>
+  </tr>
+
+  <tr>
     <td>29</td>
     <td></td>
     <td>Mosfet</td>
