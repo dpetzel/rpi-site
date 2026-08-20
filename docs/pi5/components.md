@@ -697,6 +697,36 @@
   </tr>
 
   <tr>
+    <td>229</td>
+    <td></td>
+    <td>Capacitor</td>
+    <td>0402</td>
+    <td>4u7</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=400233#p2385981">Raspberry Pi Forum</a>
+    </td>
+    <td>
+      MLCC, 4u7, 0402, 6.3V, 20%, X5R
+    </td>
+  </tr>
+
+  <tr>
+    <td>230</td>
+    <td></td>
+    <td>Resistor</td>
+    <td>0201</td>
+    <td></td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=400233#p2385981">Raspberry Pi Forum</a>
+    </td>
+    <td>
+      Resistor, Chip, 1R, 0201, 50mW, 1%
+    </td>
+  </tr>
+
+  <tr>
     <td>285</td>
     <td></td>
     <td>Capacitor</td>
