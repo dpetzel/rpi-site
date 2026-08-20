@@ -32,6 +32,8 @@
     </td>
     <td>Littelfuse SMBJ5.0A</td>
   </tr>
+
+ 
   <tr>
     <td>48</td>
     <td></td>
@@ -82,5 +84,20 @@
     <th>Replacement(s)</th>
     <th>Source(s)</th>
     <th>Notes</th>
+  </tr>
+
+  <tr>
+    <td>29</td>
+    <td></td>
+    <td>Mosfet</td>
+    <td>SOT-523</td>
+    <td></td>
+    <td>
+      <a href="https://www.digikey.co.uk/en/products/detail/diodes-incorporated/DMG1012T-7/2174582">DigiKey</a>
+    </td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=400203#p2385834">Raspberry Pi Forum</a>
+    </td>
+    <td>DMG1012T</td>
   </tr>
 </table>
