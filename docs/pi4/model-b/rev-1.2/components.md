@@ -29,6 +29,33 @@
     <td>Self-Measured</td>
     <td>SD card CLK series resistor. Upper-left of SOC. Left pad measures ~0.8Ω to SD card slot CLK pin; right pad measures ~34Ω across component.</td>
   </tr>
+  <tr>
+    <td>50</td>
+    <td></td>
+    <td>IC Power Switch P-Channel 2:1</td>
+    <td>6-WLCSP</td>
+    <td></td>
+    <td>
+      <a href="https://www.digikey.com/en/products/detail/onsemi/FPF1320UCX/3163289">DigiKey</a>
+    </td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=398936#p2379159">Raspberry Pi Forum</a>
+    </td>
+    <td>onsemi FPF1320UCX. Sits beneath the 10Ω 0201 resistor (ID 51).</td>
+  </tr>
+  <tr>
+    <td>51</td>
+    <td></td>
+    <td>Resistor</td>
+    <td>0201</td>
+    <td>10Ω</td>
+    <td></td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=398936#p2379159">Raspberry Pi Forum</a>
+    </td>
+    <td>Sits above the CSP power switch (ID 50). Board reportedly boots with this resistor bridged.</td>
+  </tr>
 </table>
 
 ## Bottom
