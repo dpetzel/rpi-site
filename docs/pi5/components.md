@@ -513,6 +513,21 @@
   </tr>
 
   <tr>
+    <td>8</td>
+    <td></td>
+    <td>N-Channel Mosfet</td>
+    <td>DFN1006B-3</td>
+    <td>20V</td>
+    <td>
+      <a href="https://www.nexperia.com/product/PMZB600UNEL">Nexperia</a>
+    </td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=400465#p2387100">Raspberry Pi Forum</a>
+    </td>
+    <td>PMZB600UNEL - 20 V, N-channel Trench MOSFET.</td>
+  </tr>
+
+  <tr>
     <td>11</td>
     <td></td>
     <td>N-Channel Mosfet</td>
@@ -523,11 +538,13 @@
     </td>
     <td>
       <a href="https://forums.raspberrypi.com/viewtopic.php?t=399702">Raspberry Pi Forum</a>
+      <br />
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=400465#p2383365">Raspberry Pi Forum</a>
     </td>
     <td>
-      PMZB600UNEL - Used for fan PWM speed control.
+      PMZB600UNEL - 20 V, N-channel Trench MOSFET. Used for fan PWM speed control.
       <br />
-      Board can still be used without this if not using the fan, provided remaining solder is not shorting the pads.
+      Board can still be used without this if not using the fan, provided remaining solder is not shorting the pads (difficult to see in the photo).
     </td>
   </tr>
 
@@ -649,6 +666,23 @@
   </tr>
 
   <tr>
+    <td>115</td>
+    <td></td>
+    <td>Resistor</td>
+    <td>0201</td>
+    <td>18K Ω</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=400465#p2387100">Raspberry Pi Forum</a>
+    </td>
+    <td>
+      18K 1% 50mW 0201.
+      <br />
+      Associated with the status LED, so its absence should not affect board stability.
+    </td>
+  </tr>
+
+  <tr>
     <td>116</td>
     <td>C263</td>
     <td>Capacitor</td>
@@ -663,6 +697,19 @@
        <br />
        Near TP46
     </td>
+  </tr>
+
+  <tr>
+    <td>117</td>
+    <td></td>
+    <td>Resistor</td>
+    <td>0201</td>
+    <td>1K Ω</td>
+    <td></td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=400465#p2387100">Raspberry Pi Forum</a>
+    </td>
+    <td>1K 1% 50mW 0201.</td>
   </tr>
 
   <tr>
