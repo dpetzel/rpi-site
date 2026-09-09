@@ -873,6 +873,51 @@
   </tr>
 
   <tr>
+    <td>180</td>
+    <td></td>
+    <td>Capacitor</td>
+    <td>0402</td>
+    <td>4u7</td>
+    <td>
+      <a href="https://www.digikey.co.uk/en/products/detail/murata-electronics/GRM155R60J475ME47D/3694656">DigiKey</a>
+    </td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=400610#p2387521">Raspberry Pi Forum</a>
+    </td>
+    <td>Murata GRM155R60J475ME47D — MLCC, 4u7, 0402 (M1005), 6.3V, 20%, X5R</td>
+  </tr>
+
+  <tr>
+    <td>181</td>
+    <td></td>
+    <td>Ferrite Bead</td>
+    <td>0402</td>
+    <td>220 Ω</td>
+    <td>
+      <a href="https://www.digikey.co.uk/en/products/detail/murata-electronics/BLM15PX221SN1D/4421097">DigiKey</a>
+    </td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=400610#p2387521">Raspberry Pi Forum</a>
+    </td>
+    <td>Murata BLM15PX221SN1D — 0402 (M1005), 220R @ 100MHz, 100mR, 1.4A</td>
+  </tr>
+
+  <tr>
+    <td>182</td>
+    <td></td>
+    <td>Capacitor</td>
+    <td>0201</td>
+    <td>10nF</td>
+    <td>
+      <a href="https://www.digikey.co.uk/en/products/detail/murata-electronics/GRM033R71A103KA01D/702460">DigiKey</a>
+    </td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=400610#p2387521">Raspberry Pi Forum</a>
+    </td>
+    <td>Murata GRM033R71A103KA01D — MLCC, 10n, 0201 (M0603), 10V, 10%, X7R</td>
+  </tr>
+
+  <tr>
     <td></td>
     <td></td>
     <td></td>
