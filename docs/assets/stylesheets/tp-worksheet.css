@@ -1,0 +1,160 @@
+/* Test Point Measurement Worksheet styles.
+ * Uses Material for MkDocs CSS variables so it follows light/dark themes. */
+
+.tp-worksheet {
+  margin: 1rem 0 2rem;
+}
+
+.tp-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.3rem;
+  background: var(--md-code-bg-color);
+}
+
+.tp-toolbar-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.tp-toolbar-label {
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.tp-muted {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.72rem;
+}
+
+.tp-device-select {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.4rem;
+  border-radius: 0.2rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  max-width: 16rem;
+}
+
+/* Compact buttons in the toolbar (override Material's large default). */
+.tp-worksheet .md-button.tp-btn {
+  padding: 0.2rem 0.6rem;
+  font-size: 0.68rem;
+  margin: 0;
+}
+
+.tp-empty {
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px dashed var(--md-default-fg-color--lighter);
+  border-radius: 0.3rem;
+}
+
+.tp-error {
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.75rem;
+  border-left: 4px solid var(--md-typeset-del-color, #d32f2f);
+  background: var(--md-code-bg-color);
+  font-size: 0.78rem;
+  border-radius: 0.2rem;
+}
+
+.tp-table-wrap {
+  overflow-x: auto;
+}
+
+.tp-zone-heading {
+  margin: 1.25rem 0 0.4rem;
+  padding-bottom: 0.2rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+  border-bottom: 2px solid var(--md-accent-fg-color);
+}
+
+.tp-zone-heading:first-child {
+  margin-top: 0;
+}
+
+table.tp-table + .tp-zone-heading {
+  margin-top: 1.5rem;
+}
+
+table.tp-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.75rem;
+}
+
+table.tp-table th,
+table.tp-table td {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  padding: 0.2rem 0.35rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+table.tp-table thead th {
+  position: sticky;
+  top: 0;
+  background: var(--md-default-bg-color);
+  z-index: 1;
+}
+
+table.tp-table .tp-tp {
+  font-weight: 700;
+  font-family: var(--md-code-font-family, monospace);
+}
+
+table.tp-table .tp-zone {
+  text-align: center;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Expected-value columns are muted and narrow. */
+.tp-col-expected,
+.tp-cell-expected {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.68rem;
+  font-style: italic;
+  text-align: center;
+  background: var(--md-code-bg-color);
+}
+
+.tp-input {
+  width: 5rem;
+  box-sizing: border-box;
+  padding: 0.15rem 0.3rem;
+  font-size: 0.75rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.2rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
+
+.tp-input.tp-notes {
+  width: 12rem;
+}
+
+.tp-input:focus {
+  outline: none;
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 0 0 2px var(--md-accent-fg-color--transparent, rgba(0, 0, 0, 0.1));
+}
+
+.tp-status {
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--light);
+}

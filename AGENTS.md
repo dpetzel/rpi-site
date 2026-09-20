@@ -16,12 +16,15 @@ When adding support for a new Raspberry Pi board (generation, model, or revision
 3. **Create revision pages** with:
    - `index.md` — Identification section (revision codes, release date, key changes)
    - `test-points.md` — Test point placeholder tables (Power Rails + Signal Test Points)
-4. **Update `mkdocs.yml` nav** — Add the new entries in the correct position:
+4. **Add an interactive worksheet** (only once the board has real test-point
+   data — see [Test Point Worksheets](#test-point-worksheets)). Skip this for
+   boards whose `test-points.md` is still an empty placeholder.
+5. **Update `mkdocs.yml` nav** — Add the new entries in the correct position:
    - Generations: reverse chronological (newest first)
    - Keyboard-integrated variants (Pi 400, Pi 500) go immediately after their parent generation
    - Revisions within a model: reverse chronological (newest first)
-5. **Update `docs/index.md`** — Add the new board to the "Models Covered" table on the front page.
-6. **Build and verify** — Run `mkdocs build` and confirm no errors.
+6. **Update `docs/index.md`** — Add the new board to the "Models Covered" table on the front page.
+7. **Build and verify** — Run `mkdocs build` and confirm no errors.
 
 ## Directory Structure
 
@@ -36,6 +39,7 @@ docs/
         components.md
         voltages.md
         test-points.md
+        worksheet.md                  # Interactive worksheet (boards with test-point data only)
         failure-modes.md
 ```
 
@@ -68,6 +72,80 @@ Retail bundles (e.g., "Pi 500 Desktop Kit", "Pi 400 Kit") are purchasing package
 - Generations are ordered in reverse chronological order (newest first).
 - Models within a generation follow their release order.
 - Revisions within a model are ordered in reverse chronological order (newest first).
+
+## Test Point Worksheets
+
+Some revisions have an interactive **measurement worksheet** — a page where a
+technician records their own test-point readings for a specific board and has
+them persisted in the browser (`localStorage`) across sessions. It is entirely
+client-side; nothing is uploaded. It supports multiple named "devices" so
+several physical boards can be tracked separately, and offers CSV/JSON export.
+
+### Moving parts
+
+| Piece | Path | Purpose |
+|-------|------|---------|
+| Worksheet engine | `docs/assets/javascripts/tp-worksheet.js` | Renders the form, handles storage/export. Contains the `TP_DATASETS` object with each board's reference values. |
+| Styles | `docs/assets/stylesheets/tp-worksheet.css` | Styling (follows the Material light/dark theme). |
+| Worksheet page | `docs/{…}/rev-{ver}/worksheet.md` | Thin page with a mount `<div class="tp-worksheet">`. |
+| Global wiring | `mkdocs.yml` | `extra_css` / `extra_javascript` load the assets site-wide; a `Worksheet:` nav entry sits right after that revision's `Test Points`. |
+
+The JS and CSS are registered **once** in `mkdocs.yml` and serve every
+worksheet — you do not add them per page.
+
+### How the worksheet uses the data
+
+- Each board has an entry in `TP_DATASETS`, keyed by a slug like
+  `pi4-model-b-rev1.5` (the same string used in the page's `data-board`
+  attribute). The `data-title` attribute is the human-readable heading.
+- A dataset has `columns` (the measurement columns, e.g. Powered / OS Idle /
+  Resistance) and `points` (one row per test point, each carrying its `zone`
+  and the published reference values in `ref`).
+- On the page, rows are **grouped by zone** and any test point with **no
+  published reference value is omitted** from the worksheet (it still lives on
+  the reference `test-points.md` page). The muted *exp.* columns echo the
+  reference values so the tech can compare against what they measure.
+
+### Adding a worksheet for a board
+
+Only add a worksheet once `test-points.md` has **real recorded data** (not an
+empty `TODO` placeholder).
+
+1. **Add a dataset** to `TP_DATASETS` in `tp-worksheet.js`. Copy the values
+   **verbatim** from that revision's `test-points.md` table — same test-point
+   labels (`TP…` or `PP…`), zones, and reference readings. Include rows with no
+   data too (blank `ref` values); the renderer filters them out. If the board
+   uses a different column schema, define its `columns` accordingly.
+2. **Create `worksheet.md`** next to `test-points.md`. Use an existing worksheet
+   (e.g. `docs/pi4/model-b/rev-1.5/worksheet.md`) as the template and update the
+   heading, `data-board`, and `data-title`. Keep the "how your data is stored"
+   admonition. Keep `markdown="0"` on the mount `<div>` so `md_in_html` does not
+   reformat it.
+3. **Add the nav entry** in `mkdocs.yml`: a `Worksheet:` item immediately after
+   that revision's `Test Points:` entry.
+4. **Verify:** `node --check docs/assets/javascripts/tp-worksheet.js` and
+   `mkdocs build`, then confirm the worksheet renders and groups by zone.
+
+### ⚠️ Keep worksheets in sync with test points
+
+**The reference values baked into `TP_DATASETS` are a copy of the
+`test-points.md` tables. Whenever you add, edit, or correct test-point data for
+a board that has a worksheet, you MUST update the matching `TP_DATASETS` entry
+in `tp-worksheet.js` in the same change** — otherwise the worksheet's *exp.*
+columns will silently drift out of date.
+
+This applies in both directions:
+
+- Editing a value, zone, or test-point label in `test-points.md` → update the
+  corresponding `ref` / `zone` / `tp` field in `tp-worksheet.js`.
+- Adding a new column to a board's readings → update that dataset's `columns`.
+- Adding a worksheet-less board's first real data → consider adding a worksheet
+  per the steps above.
+
+Boards currently with worksheets (keep these in sync): `pi4-model-b-rev1.5`,
+`pi4-model-b-rev1.1`, `pi5-rev1.0`, `pi5-rev1.1` (Powered-only reference so
+far), `pi3-3b-plus-rev1.3`.
+
 
 ## File and Directory Permissions
 
