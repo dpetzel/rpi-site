@@ -36,6 +36,12 @@ theme:
 plugins:
   - search
 
+extra_css:
+  - assets/stylesheets/tp-worksheet.css
+
+extra_javascript:
+  - assets/javascripts/tp-worksheet.js
+
 markdown_extensions:
   - tables
   - admonition
@@ -60,10 +66,12 @@ nav:
       - Rev 1.1:
         - Overview: pi5/rev-1.1/index.md
         - Test Points: pi5/rev-1.1/test-points.md
+        - Worksheet: pi5/rev-1.1/worksheet.md
         - Voltage Reference: pi5/rev-1.1/voltage_reference.md
       - Rev 1.0:
         - Overview: pi5/rev-1.0/index.md
         - Test Points: pi5/rev-1.0/test-points.md
+        - Worksheet: pi5/rev-1.0/worksheet.md
       - Components:  pi5/components.md
       - PMIC: pi5/pmic/index.md
       - Troubleshooting:
@@ -81,6 +89,7 @@ nav:
         - Rev 1.5:
           - Overview: pi4/model-b/rev-1.5/index.md
           - Test Points: pi4/model-b/rev-1.5/test-points.md
+          - Worksheet: pi4/model-b/rev-1.5/worksheet.md
           - Components: pi4/model-b/rev-1.5/components.md
         - Rev 1.4:
           - Overview: pi4/model-b/rev-1.4/index.md
@@ -94,6 +103,7 @@ nav:
           - Overview: pi4/model-b/rev-1.1/index.md
           - Components: pi4/model-b/rev-1.1/components.md
           - Test Points: pi4/model-b/rev-1.1/test-points.md
+          - Worksheet: pi4/model-b/rev-1.1/worksheet.md
       - PMIC:
         - Overview: pi4/pmic/index.md
         - MxL7704: pi4/pmic/mxl7704.md
@@ -116,6 +126,7 @@ nav:
           - Overview: pi3/3b-plus/rev-1.3/index.md
           - Components: pi3/3b-plus/rev-1.3/components.md
           - Test Points: pi3/3b-plus/rev-1.3/test-points.md
+          - Worksheet: pi3/3b-plus/rev-1.3/worksheet.md
           - Voltage Reference: pi3/3b-plus/rev-1.3/voltage_reference.md
       - 3A+:
         - Overview: pi3/3a-plus/index.md
