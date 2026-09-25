@@ -69,7 +69,10 @@
         { tp: "TP31", zone: "", ref: { powered: "", os_idle: "", resistance: "" } },
         { tp: "TP32", zone: "", ref: { powered: "", os_idle: "", resistance: "" } },
         { tp: "TP33", zone: "", ref: { powered: "", os_idle: "", resistance: "" } },
-        { tp: "TP34", zone: "4", ref: { powered: "1.03v", os_idle: "1.03v", resistance: "53 Ω" } }
+        { tp: "TP34", zone: "4", ref: { powered: "1.03v", os_idle: "1.03v", resistance: "53 Ω" } },
+        { tp: "GPIO1→GND", zone: "GPIO", ref: { powered: "", os_idle: "", resistance: "OL" } },
+        { tp: "GPIO2→GND", zone: "GPIO", ref: { powered: "", os_idle: "", resistance: "OL" } },
+        { tp: "GPIO1→GPIO2", zone: "GPIO", ref: { powered: "", os_idle: "", resistance: "OL" } }
       ]
     },
     "pi4-model-b-rev1.1": {
@@ -112,7 +115,10 @@
         { tp: "TP31", zone: "", ref: { powered: "", os_idle: "", resistance: "" } },
         { tp: "TP32", zone: "", ref: { powered: "", os_idle: "", resistance: "" } },
         { tp: "TP33", zone: "", ref: { powered: "", os_idle: "", resistance: "" } },
-        { tp: "TP34", zone: "4", ref: { powered: "1.04v", os_idle: "1.04v", resistance: "OL" } }
+        { tp: "TP34", zone: "4", ref: { powered: "1.04v", os_idle: "1.04v", resistance: "OL" } },
+        { tp: "GPIO1→GND", zone: "GPIO", ref: { powered: "", os_idle: "", resistance: "OL" } },
+        { tp: "GPIO2→GND", zone: "GPIO", ref: { powered: "", os_idle: "", resistance: "OL" } },
+        { tp: "GPIO1→GPIO2", zone: "GPIO", ref: { powered: "", os_idle: "", resistance: "OL" } }
       ]
     },
     "pi5-rev1.1": {
@@ -197,7 +203,10 @@
         { tp: "TP73", zone: "4", ref: { powered: "0v", os_idle: "", resistance: "" } },
         { tp: "TP74", zone: "", ref: { powered: "", os_idle: "", resistance: "" } },
         { tp: "TP75", zone: "", ref: { powered: "", os_idle: "", resistance: "" } },
-        { tp: "TP76", zone: "1", ref: { powered: "5.02v", os_idle: "", resistance: "" } }
+        { tp: "TP76", zone: "1", ref: { powered: "5.02v", os_idle: "", resistance: "" } },
+        { tp: "GPIO1→GND", zone: "GPIO", ref: { powered: "", os_idle: "", resistance: "OL" } },
+        { tp: "GPIO2→GND", zone: "GPIO", ref: { powered: "", os_idle: "", resistance: "OL" } },
+        { tp: "GPIO1→GPIO2", zone: "GPIO", ref: { powered: "", os_idle: "", resistance: "OL" } }
       ]
     },
     "pi5-rev1.0": {
@@ -282,7 +291,10 @@
         { tp: "TP73", zone: "4", ref: { powered: "0v", os_idle: "0v", resistance: "0.2 Ω" } },
         { tp: "TP74", zone: "1", ref: { powered: "5.42v", os_idle: "5.29v", resistance: "19.2K Ω" } },
         { tp: "TP75", zone: "", ref: { powered: "", os_idle: "", resistance: "" } },
-        { tp: "TP76", zone: "1", ref: { powered: "5.42v", os_idle: "5.19v", resistance: "19.1K Ω" } }
+        { tp: "TP76", zone: "1", ref: { powered: "5.42v", os_idle: "5.19v", resistance: "19.1K Ω" } },
+        { tp: "GPIO1→GND", zone: "GPIO", ref: { powered: "", os_idle: "", resistance: "OL" } },
+        { tp: "GPIO2→GND", zone: "GPIO", ref: { powered: "", os_idle: "", resistance: "OL" } },
+        { tp: "GPIO1→GPIO2", zone: "GPIO", ref: { powered: "", os_idle: "", resistance: "OL" } }
       ]
     },
     "pi3-3b-plus-rev1.3": {

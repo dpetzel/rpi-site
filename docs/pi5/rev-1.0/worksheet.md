@@ -34,4 +34,16 @@ Match these conditions when recording, so your values line up with the reference
 * **Powered** — board plugged in / powered on, with *nothing* else connected
   (no SD card inserted).
 * **OS Idle** — booted into Raspberry Pi OS from an inserted SD card, sitting idle.
-* **Resistance** — measured **without** power; resistance to ground from the test point.
+|* **Resistance** — measured **without** power; resistance to ground from the test point.
+
+## GPIO Resistance Tests
+
+These tests use a multimeter to check for shorts or unexpected continuity on the GPIO header. Measure with the board **unpowered**.
+
+| Test | Probe 1 | Probe 2 | Expected |
+|------|---------|----------|----------|
+| GPIO 1 → GND | Physical pin 1 (3.3V) | Any GND pin (e.g. pin 6, 9, 14, 20, 25, 30, 34, 39) | OL |
+| GPIO 2 → GND | Physical pin 2 (5V) | Any GND pin (e.g. pin 6, 9, 14, 20, 25, 30, 34, 39) | OL |
+| GPIO 1 → GPIO 2 | Physical pin 1 (3.3V) | Physical pin 2 (5V) | OL |
+
+> **Note:** GPIO 1 and GPIO 2 are the 3.3V and 5V power supply pins on the 40-pin header, not GPIO data lines. On a healthy board, both should show OL (open circuit) to ground and to each other. A low resistance reading indicates a short on the power rail.
