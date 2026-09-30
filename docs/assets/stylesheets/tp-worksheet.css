@@ -158,3 +158,99 @@ table.tp-table .tp-zone {
   font-size: 0.7rem;
   color: var(--md-default-fg-color--light);
 }
+
+/* --------------------------------------------------------------------
+ * AI prompt modal
+ * ------------------------------------------------------------------ */
+.tp-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.tp-modal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 46rem;
+  max-height: 85vh;
+  border-radius: 0.3rem;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.tp-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.tp-modal-title {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.tp-modal-close {
+  border: none;
+  background: transparent;
+  color: var(--md-default-fg-color--light);
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.1rem 0.3rem;
+}
+
+.tp-modal-close:hover {
+  color: var(--md-default-fg-color);
+}
+
+.tp-modal-body {
+  padding: 0.75rem 1rem;
+  overflow-y: auto;
+}
+
+.tp-modal-help {
+  margin: 0 0 0.6rem;
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.tp-prompt-text {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 16rem;
+  padding: 0.6rem 0.7rem;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  resize: vertical;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.2rem;
+  background: var(--md-code-bg-color);
+  color: var(--md-default-fg-color);
+}
+
+.tp-modal-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.tp-modal-footer .tp-copy-status {
+  margin-left: auto;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}

@@ -563,6 +563,207 @@
     this.download(slug(dev.name) + "_" + this.board + ".csv", csv, "text/csv");
   };
 
+  /* --------------------------------------------------------------------
+   * AI prompt generation
+   *
+   * Produces a ready-to-paste prompt for an AI assistant that includes the
+   * board identity, the recorded measurements alongside their published
+   * reference values, and links back to this site for reference material.
+   * ------------------------------------------------------------------ */
+
+  // Resolve URLs for the reference test-points page and this worksheet page.
+  // The worksheet always lives at ".../rev-x/worksheet/", with the reference
+  // table as a sibling ".../rev-x/test-points/".
+  Worksheet.prototype.referenceLinks = function () {
+    var worksheetUrl = "";
+    var referenceUrl = "";
+    try {
+      var loc = window.location;
+      worksheetUrl = loc.origin + loc.pathname;
+      referenceUrl = worksheetUrl.replace(/worksheet\/?$/, "test-points/");
+      // Fall back gracefully if the path doesn't match the expected shape.
+      if (referenceUrl === worksheetUrl) {
+        referenceUrl = worksheetUrl.replace(/[^/]*\/?$/, "test-points/");
+      }
+    } catch (e) {
+      /* location unavailable (e.g. sandboxed) — leave blank */
+    }
+    return { worksheet: worksheetUrl, reference: referenceUrl };
+  };
+
+  Worksheet.prototype.buildAiPrompt = function () {
+    var self = this;
+    var dev = this.activeDevice();
+    if (!dev) return "";
+
+    var cols = this.dataset.columns;
+    var links = this.referenceLinks();
+
+    var lines = [];
+    lines.push("You are an experienced Raspberry Pi hardware repair technician helping me");
+    lines.push("diagnose a faulty board using multimeter test point measurements.");
+    lines.push("");
+    lines.push("Board: " + this.title);
+    lines.push("Worksheet device: " + dev.name);
+    lines.push("");
+    lines.push("Below is a table of the test points I have measured. For each point you get");
+    lines.push("my measured value(s) and the published reference (\"expected\") value(s). Some");
+    lines.push("rows may be blank where I have not measured yet — treat those as unknown.");
+    lines.push("");
+    lines.push("Please:");
+    lines.push("1. Compare each measured value against its expected value and flag any that");
+    lines.push("   deviate significantly (note that small differences are normal).");
+    lines.push("2. Identify the most likely faults based on which points are out of range,");
+    lines.push("   reasoning about the power rails / components those points belong to.");
+    lines.push("3. Suggest the next test points to measure or components to inspect to");
+    lines.push("   confirm the diagnosis.");
+    lines.push("4. Call out any measurements that look implausible and worth re-checking.");
+    lines.push("");
+    lines.push("Measurement conditions: \"Powered\" = board powered on with nothing connected");
+    lines.push("(no SD card); \"OS Idle\" = booted into Raspberry Pi OS and idle; \"Resistance\"");
+    lines.push("= measured with the board unpowered, to ground.");
+    lines.push("");
+
+    // Build a compact, readable measurement table.
+    var header = ["Test Point", "Zone"];
+    cols.forEach(function (c) {
+      header.push(c.label + " measured");
+      header.push(c.label + " expected");
+    });
+    header.push("Notes");
+
+    var rows = [header];
+    var anyReading = false;
+    this.groupedPoints().forEach(function (group) {
+      group.points.forEach(function (p) {
+        var r = dev.readings[p.tp] || {};
+        var row = [p.tp, group.zone];
+        cols.forEach(function (c) {
+          var measured = r[c.key] != null ? String(r[c.key]).trim() : "";
+          if (measured) anyReading = true;
+          row.push(measured || "-");
+          row.push(p.ref[c.key] != null && String(p.ref[c.key]).trim() !== "" ? String(p.ref[c.key]) : "-");
+        });
+        var notes = r.notes != null ? String(r.notes).trim() : "";
+        if (notes) anyReading = true;
+        row.push(notes || "-");
+        rows.push(row);
+      });
+    });
+
+    var tableLines = ["| " + rows[0].join(" | ") + " |"];
+    tableLines.push("| " + rows[0].map(function () { return "---"; }).join(" | ") + " |");
+    rows.slice(1).forEach(function (row) {
+      tableLines.push("| " + row.join(" | ") + " |");
+    });
+    lines.push(tableLines.join("\n"));
+    lines.push("");
+
+    if (!anyReading) {
+      lines.push("(No measurements have been entered yet — please tell me which test points");
+      lines.push("to start with for this board and what values I should expect.)");
+      lines.push("");
+    }
+
+    lines.push("Reference material (please use these for the correct pinouts, zones, and");
+    lines.push("expected values, and cite them where relevant):");
+    if (links.reference) {
+      lines.push("- Reference test points: " + links.reference);
+    }
+    if (links.worksheet) {
+      lines.push("- This worksheet: " + links.worksheet);
+    }
+    lines.push("- Raspberry Pi board reference & repair guides: https://rpi.dpetzel.info/");
+
+    return lines.join("\n");
+  };
+
+  Worksheet.prototype.showAiPrompt = function () {
+    var self = this;
+    var dev = this.activeDevice();
+    if (!dev) return;
+
+    var prompt = this.buildAiPrompt();
+
+    var overlay = el("div", { class: "tp-modal-overlay", role: "dialog", "aria-modal": "true", "aria-label": "AI prompt" });
+
+    function close() {
+      if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+      document.removeEventListener("keydown", onKey);
+    }
+    function onKey(e) {
+      if (e.key === "Escape") close();
+    }
+    document.addEventListener("keydown", onKey);
+    overlay.addEventListener("click", function (e) {
+      if (e.target === overlay) close();
+    });
+
+    var closeBtn = el("button", { class: "tp-modal-close", type: "button", "aria-label": "Close", text: "\u00d7" });
+    closeBtn.addEventListener("click", close);
+
+    var textarea = el("textarea", {
+      class: "tp-prompt-text",
+      readonly: "readonly",
+      "aria-label": "Generated AI prompt",
+      spellcheck: "false"
+    });
+    textarea.value = prompt;
+
+    var status = el("span", { class: "tp-copy-status" });
+
+    var copyBtn = el("button", { class: "md-button md-button--primary", type: "button", text: "Copy to clipboard" });
+    copyBtn.addEventListener("click", function () {
+      self.copyText(prompt, textarea).then(function () {
+        status.textContent = "Copied!";
+      }, function () {
+        status.textContent = "Copy failed — select the text and copy manually.";
+      });
+    });
+
+    var dismissBtn = el("button", { class: "md-button", type: "button", text: "Close" });
+    dismissBtn.addEventListener("click", close);
+
+    var modal = el("div", { class: "tp-modal" }, [
+      el("div", { class: "tp-modal-header" }, [
+        el("h2", { class: "tp-modal-title", text: "AI diagnostic prompt" }),
+        closeBtn
+      ]),
+      el("div", { class: "tp-modal-body" }, [
+        el("p", { class: "tp-modal-help" },
+          ["Copy this prompt into your AI assistant (ChatGPT, Claude, etc.). It includes your measurements, the published reference values, and links back to this site for reference material."]),
+        textarea
+      ]),
+      el("div", { class: "tp-modal-footer" }, [copyBtn, dismissBtn, status])
+    ]);
+
+    overlay.appendChild(modal);
+    document.body.appendChild(overlay);
+
+    // Preselect the text so manual copy is one keystroke away.
+    textarea.focus();
+    textarea.setSelectionRange(0, textarea.value.length);
+  };
+
+  Worksheet.prototype.copyText = function (text, textarea) {
+    // Prefer the async Clipboard API; fall back to execCommand on the textarea.
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function (resolve, reject) {
+      try {
+        if (textarea) {
+          textarea.focus();
+          textarea.setSelectionRange(0, textarea.value.length);
+        }
+        var ok = document.execCommand("copy");
+        ok ? resolve() : reject(new Error("execCommand copy failed"));
+      } catch (e) {
+        reject(e);
+      }
+    });
+  };
+
   Worksheet.prototype.download = function (filename, content, type) {
     var blob = new Blob([content], { type: type + ";charset=utf-8" });
     var url = URL.createObjectURL(blob);
@@ -659,6 +860,7 @@
     var clearBtn = btn("Clear values", function () { self.clearActiveReadings(); });
     var csvBtn = btn("Export CSV", function () { self.exportCSV(); });
     var jsonBtn = btn("Export JSON", function () { self.exportJSON(); });
+    var aiBtn = btn("AI Prompt", function () { self.showAiPrompt(); });
 
     var left = el("div", { class: "tp-toolbar-group" }, [
       el("label", { class: "tp-toolbar-label", text: "Device:" }),
@@ -666,7 +868,7 @@
       addBtn
     ]);
     var right = el("div", { class: "tp-toolbar-group" },
-      this.activeDevice() ? [renameBtn, clearBtn, deleteBtn, csvBtn, jsonBtn] : []);
+      this.activeDevice() ? [renameBtn, clearBtn, deleteBtn, aiBtn, csvBtn, jsonBtn] : []);
 
     return el("div", { class: "tp-toolbar" }, [left, right]);
   };
