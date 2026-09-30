@@ -85,7 +85,7 @@ several physical boards can be tracked separately, and offers CSV/JSON export.
 
 | Piece | Path | Purpose |
 |-------|------|---------|
-| Worksheet engine | `docs/assets/javascripts/tp-worksheet.js` | Renders the form, handles storage/export. Contains the `TP_DATASETS` object with each board's reference values. |
+| Worksheet engine | `docs/assets/javascripts/tp-worksheet.js` | Renders the form, handles storage/export, and builds the copy-to-clipboard **AI Prompt**. Contains the `TP_DATASETS` object with each board's reference values. |
 | Styles | `docs/assets/stylesheets/tp-worksheet.css` | Styling (follows the Material light/dark theme). |
 | Worksheet page | `docs/{…}/rev-{ver}/worksheet.md` | Thin page with a mount `<div class="tp-worksheet">`. |
 | Global wiring | `mkdocs.yml` | `extra_css` / `extra_javascript` load the assets site-wide; a `Worksheet:` nav entry sits right after that revision's `Test Points`. |

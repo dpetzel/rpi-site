@@ -13,6 +13,13 @@ boards separately — add a new device for each unit you work on.
     different device, or private/incognito windows will lose the entries. Use
     **Export CSV / JSON** to keep a durable copy.
 
+!!! tip "Get AI help with your measurements"
+    Once you've recorded some values, click **AI Prompt** in the toolbar to
+    generate a ready-to-paste prompt for an AI assistant (ChatGPT, Claude,
+    etc.). It bundles your measurements with the published reference values and
+    links back to this site's reference pages, so the assistant can help
+    compare readings and suggest likely faults.
+
 The muted *exp.* columns show the published reference values from the
 [reference test points page](test-points.md) for quick comparison against what
 you measure. Points are **grouped by board zone** so you can work through one
