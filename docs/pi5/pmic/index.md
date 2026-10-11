@@ -33,7 +33,7 @@ These in theory represent the input power to the PMIC itself.
   </figure>
   <figure style="flex: 1; min-width: 150px; margin: 0; width: 150px">
     <img src="images/pi5_da9091_pad_reference.png" alt="Pi 5 board bottom" style="width: 100%;">
-     <figcaption style="text-align: center; font-size: 0.8rem;">Aannotated Pad Photo</figcaption>
+     <figcaption style="text-align: center; font-size: 0.8rem;">Annotated Pad Photo</figcaption>
   </figure>
 </div>
 
