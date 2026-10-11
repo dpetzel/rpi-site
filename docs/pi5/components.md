@@ -427,6 +427,25 @@
   </tr>
 
   <tr>
+    <td>76</td>
+    <td></td>
+    <td>Load Switch</td>
+    <td>WLCSP-6</td>
+    <td></td>
+    <td>
+      <a href="https://www.mouser.com/en/ProductDetail/onsemi/FPF1320UCX?qs=Aj0GNA1YSDQmwNhaNM0zGQ%3D%3D">Mouser</a>
+    </td>
+    <td>
+      <a href="https://forums.raspberrypi.com/viewtopic.php?t=399211#p2389970">Raspberry Pi Forum</a>
+    </td>
+    <td>
+      onsemi FPF1320UCX — IntelliMAX dual-input, single-output power switch
+      <br />
+      Right of the PMIC, between the inductors and the SoC. #13 in the <a href="/pi5/pmic#area-breakout">PMIC Area Breakout</a>
+    </td>
+  </tr>
+
+  <tr>
     <td>103</td>
     <td></td>
     <td>Capacitor</td>

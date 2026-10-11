@@ -172,7 +172,22 @@ enters the PMIC
   </tr>
   <tr><td>11</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
   <tr><td>12</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>13</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>13</td>
+    <td>Load Switch</td>
+    <td>WLCSP-6</td>
+    <td></td>
+    <td></td>
+    <td>
+      <ul>
+        <li><a href="https://www.mouser.com/en/ProductDetail/onsemi/FPF1320UCX?qs=Aj0GNA1YSDQmwNhaNM0zGQ%3D%3D">Mouser</a></li>
+        <li><a href="https://forums.raspberrypi.com/viewtopic.php?t=399211#p2389970">Identification Source</a></li>
+      </ul>
+    </td>
+    <td>onsemi FPF1320UCX — IntelliMAX dual-input, single-output power switch.
+      <br />
+      Component #76 on the <a href="/pi5/components">board components</a> page.
+    </td>
+  </tr>
   <tr><td>14</td>
     <td>Capacitor</td>
     <td>0402</td>
