@@ -73,6 +73,7 @@ nav:
         - Test Points: pi5/rev-1.0/test-points.md
         - Worksheet: pi5/rev-1.0/worksheet.md
       - Components:  pi5/components.md
+      - Boardview: pi5/boardview/index.md
       - PMIC: pi5/pmic/index.md
       - Troubleshooting:
         - 5V Power Flow: pi5/troubleshooting/5v-power-flow.md
