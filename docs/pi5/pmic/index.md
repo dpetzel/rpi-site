@@ -185,7 +185,7 @@ enters the PMIC
     </td>
     <td>onsemi FPF1320UCX — IntelliMAX dual-input, single-output power switch.
       <br />
-      Component #76 on the <a href="/pi5/components">board components</a> page.
+      Search <code>FPF1320</code> in the <a href="/pi5/boardview/">Pi 5 Boardview</a>.
     </td>
   </tr>
   <tr><td>14</td>

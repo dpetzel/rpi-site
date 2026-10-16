@@ -12,15 +12,14 @@ input. The DA9091 PMIC controls a DMG7430LFG N-channel MOSFET as a hot-swap
 switch, ramping the gate over ~400µs to limit inrush current into the >350µF
 of capacitance on the 5V rail.
 
-Top-side parts are referred to by board reference (e.g. J1, U5); search for them in the
-[Pi 5 Boardview](../boardview/index.md). Bottom-side references (e.g. "Bottom #3") refer to the
-numbered list on the [Pi 5 Components](../components.md) page.
+Parts are referred to by board reference (e.g. J1, U5) or part number; find them in the
+[Pi 5 Boardview](../boardview/index.md).
 
 ## Power Flow
 
 ```mermaid
 flowchart LR
-    USB(["⚡ USB-C (J1)"]) -- "5V In → Drain" --> MOSFET["N-Ch MOSFET\nDMG7430LFG\n(Bottom #3)"]
+    USB(["⚡ USB-C (J1)"]) -- "5V In → Drain" --> MOSFET["N-Ch MOSFET\nDMG7430LFG\n(bottom side)"]
     USB -- "Drain sense" --> PMIC_DRAIN["DA9091 Pin 21\nHOTSWAP_DRAIN"]
     PMIC_GATE["DA9091 Pin 22\nHOTSWAP_GATE"] -- "Gate drive\n(~400µs ramp)" --> MOSFET
     MOSFET -- "Source → 5V Rail" --> RAIL["5V Rail"]
@@ -33,7 +32,7 @@ flowchart LR
     PMIC_5V --- PMIC
 ```
 
-## MOSFET Pinout — Bottom #3 (DMG7430LFG-7)
+## MOSFET Pinout — DMG7430LFG-7 (bottom side)
 
 <table style="border-collapse: collapse; text-align: center; font-family: monospace;">
   <tr>

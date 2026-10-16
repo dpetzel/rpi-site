@@ -3,10 +3,8 @@
 An interactive view of the Pi 5 board built from a reverse-engineered KiCad layout.
 Click a part for its details, or click a pad to highlight every pad on the same net.
 
-!!! note "Work in progress"
-    Component mapping is still under way. Only part of the top side is identified so far, and the
-    bottom side has not been placed yet. Until it is complete, see the [Components](../components.md)
-    page for the full list of identified parts, sources, and replacement links.
+Use **Top / Bottom** (or press <kbd>F</kbd>) to switch sides. Identified parts include their function,
+part numbers, replacement links and sources.
 
 [Open full screen ↗](pi5-boardview.html){ .md-button target="_blank" }
 
