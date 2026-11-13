@@ -7,10 +7,10 @@
 An interactive view of the Pi 4 Model B board built from a reverse-engineered KiCad layout: click a part for its
 details, or a pad to highlight its net. Each board revision is reconstructed separately.
 
-| Revision | Viewer | Status |
-|---|---|---|
-| [Rev 1.5](../model-b/rev-1.5/index.md) | [Open rev 1.5 ↗](https://dpetzel.github.io/pi4-boardview/1.5/){ target="_blank" } | Started: DA9090 PMIC, C13, test points |
-| [Rev 1.4](../model-b/rev-1.4/index.md) | [Open rev 1.4 ↗](https://dpetzel.github.io/pi4-boardview/1.4/){ target="_blank" } | In progress |
+| Revision | Viewer |
+|---|---|
+| [Rev 1.5](../model-b/rev-1.5/index.md) | [Open rev 1.5 ↗](https://dpetzel.github.io/pi4-boardview/1.5/){ target="_blank" } |
+| [Rev 1.4](../model-b/rev-1.4/index.md) | [Open rev 1.4 ↗](https://dpetzel.github.io/pi4-boardview/1.4/){ target="_blank" } |
 
 [Open the boardview ↗](https://dpetzel.github.io/pi4-boardview/){ .md-button .md-button--primary target="_blank" }
 
