@@ -105,6 +105,7 @@ nav:
           - Components: pi4/model-b/rev-1.1/components.md
           - Test Points: pi4/model-b/rev-1.1/test-points.md
           - Worksheet: pi4/model-b/rev-1.1/worksheet.md
+      - Boardview: pi4/boardview/index.md
       - PMIC:
         - Overview: pi4/pmic/index.md
         - MxL7704: pi4/pmic/mxl7704.md

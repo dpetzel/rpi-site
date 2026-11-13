@@ -20,6 +20,7 @@ Board-level repair reference for the Raspberry Pi 4 Model B, PCB revision 1.4.
 
 ## Sections
 - [Test Points](test-points.md) - Test point map and expected readings
+- [Boardview](../../boardview/index.md) - Interactive reverse-engineered board layout ([open rev 1.4 ↗](https://dpetzel.github.io/pi4-boardview/1.4/))
 
 ---
 
